@@ -807,11 +807,11 @@ body {
       margin-top: -25px;
   }
   #li {
-    background-size: 70px 70px;
+    background-size: 80px 80px;
     background-position: center;
     background-repeat: no-repeat;
     height: 70px;
-    width: 70px;
+    width: 20%;
     display: inline-block;
     list-style: none;
     margin: 0px 0px 0px 0px;
@@ -913,25 +913,27 @@ margin-top: -5px; font-size: 0.85em; padding: 0px 10px 0px 10px;
 color: rgb(231, 150, 44);
 flex: 1;
 order: 1;
-margin-left: 10px;
+margin-left: 0px;
 margin-top: 10px;
 
 }
+
 #revision{
-  width: 300px;
-  margin-left: 10px;
+  width: 250px;
+  margin-left: 30px;
 }
 #revision2{
-  width: 300px;
-  margin-left: -10px;
+  width: 250px;
+  margin-left: 20px;
 }
 
 #footsec2{
+
   color: rgb(231, 150, 44);
 flex: 1;
 order: 2;
 margin-top: -10px;
-margin-right: -10px;
+margin-right: 0px;
 
 }
 #ftlinks {
@@ -1094,10 +1096,10 @@ margin-top: -10px;
   }
   ul {
       margin-left: -40px;
-      margin-top: -45px;
+      margin-top: -40px;
   }
   #li {
-    background-size: 80px 80px;
+    background-size: 90px 90px;
     background-position: center;
     background-repeat: no-repeat;
     height: 100px;
@@ -1248,17 +1250,17 @@ margin-top: -5px; font-size: 0.85em; padding: 0px 10px 0px 10px;
 color: rgb(231, 150, 44);
 flex: 1 0 320px;
 order: 1;
-margin-left: 10px;
+margin-left: 0px;
 margin-top: 10px;
 
 }
 #revision{
-  width: 300px;
-  margin-left: 10px;
+  width: 250px;
+  margin-left: 30px;
 }
 #revision2{
-  width: 300px;
-  margin-left: -10px;
+  width: 250px;
+  margin-left: 20px;
 }
 
 #footsec2{
@@ -1266,7 +1268,7 @@ margin-top: 10px;
 flex: 1 0 320px;
 order: 2;
 margin-top: -10px;
-margin-right: -10px;
+margin-right: 0px;
 
 }
 #ftlinks {
