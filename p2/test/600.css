@@ -1,0 +1,23 @@
+@media (max-width: 680px){
+    .navmenu{
+        position: relative;
+        flex-flow: column wrap;
+        max-width: 110px;
+        padding-top: 65px;
+        top: auto;
+        height: 350px;
+        box-shadow: 1.5px 1.5px 5px rgb(0, 0, 0);
+    }
+    .navmenu li a{
+        min-height: 65px;
+        margin-left: -40px;
+
+    }
+    .navmenu li a:hover{
+        transform: rotateY(20deg);
+        transform-origin: 50% 0;
+        transition: all 0.4s;
+        opacity: 0.2;
+        
+      }
+  }
