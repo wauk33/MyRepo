@@ -1,6 +1,5 @@
 
-body {
-  
+body {  
   background-image: url("headerimg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -220,12 +219,6 @@ body {
     color: white;
   
   }
-  
-  #subfootcon {
-   
-  }
-  
-  
   .circle1:hover{
     transition: all 0.3s;
     box-shadow: 0px 0px 20px 5px rgba(255, 255, 255, 0.657)
@@ -506,7 +499,7 @@ body {
     width: 550px; padding: 0px 25px 5px 15px; float: left;
   }
   .imgart4 {
-    width: 300px; padding: 0px 25px 5px 15px; float: left;
+    width: 500px; padding: 0px 25px 5px 15px; float: left;
   }
     .text {
       margin-top: -5px; margin-left: 420px; font-size: 0.85em; padding: 0px 10px 10px 10px;
@@ -575,6 +568,7 @@ box-shadow: 0px 0px 15px white;
   height: 300px; margin-top:10px;
  }
  #toTopBtn {
+  display: none;
   position: fixed;
   background-image: url(toTopBtn.png);
   background-repeat: no-repeat;
@@ -614,8 +608,29 @@ html {
 
 
 
+/* BODY UP */
 
 
+
+
+
+
+
+
+
+
+/* ---------------- */
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES DOWN*/
 
 
 

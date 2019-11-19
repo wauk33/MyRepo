@@ -125,10 +125,11 @@ function printDateToday(){
   let arttime4 = document.getElementById("arttime4");
   arttime4.innerText = printDate(3,2);
     
-  
+
+//back to top of the page button
 let backToTopButton = document.getElementById("toTopBtn");
 window.onscroll = function(){
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+  if (document.body.scrollTop > 250 || document.documentElement.scrollTop > 250) {
     backToTopButton.style.display = "block";
   } else {
     backToTopButton.style.display = "none";
