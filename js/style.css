@@ -372,7 +372,7 @@ body {
     padding-bottom: 7px;
   
   }
-  #arttime, #arttime2 {
+  #arttime, #arttime2, #arttime3, #arttime4 {
   font-size: 0.9em;
   text-align: right;
   margin-top: 20px;
@@ -452,13 +452,20 @@ body {
     font-weight: bold;
   }
   .buybutton{
-    width: 150px;
-    height: 50px;
+    width: 60px;
+    height: 20px;
     background-color: rgb(233, 143, 25); 
-    border-radius: 60px; font-size: 0.8em;
+    border-radius: 60px; font-size: 1.1em;
     font-weight: bold;
-    margin-top: 80px;
+    margin-top: 10px;
     position: absolute;
+    margin-left: -50px;
+  }
+  .buytext{
+    margin-top: 0px; font-size: 0.9em;
+  }
+  .imgbuybox {
+    width: 100px; margin-left: 0px; margin-top: 0px; float: left;
   }
   .sendbutton{
     width: 150px;
@@ -468,7 +475,7 @@ body {
     font-weight: bold;
     position: absolute;
     margin-top: 350px;
-    margin-left: -425px;
+    margin-left: -500px;
   
   }
   #vbuttonid {
@@ -498,15 +505,157 @@ body {
   .imgart2 {
     width: 550px; padding: 0px 25px 5px 15px; float: left;
   }
+  .imgart4 {
+    width: 300px; padding: 0px 25px 5px 15px; float: left;
+  }
     .text {
       margin-top: -5px; margin-left: 420px; font-size: 0.85em; padding: 0px 10px 10px 10px;
     }
     .text2 {
     margin-top: -20px; font-size: 0.85em; padding: 0px 10px 10px 10px;
+    }
+   .text3 {
+    margin-top: -5px; font-size: 0.8em; padding: 0px 0px 0px 10px;
+    }
+    .text4 {
+    margin-top: -5px; font-size: 0.8em; padding: 0px 0px 0px 10px;
+    }
+    .redtexthalloween{
+      color: darkred;
+      text-shadow: 0px 0px 10px red;
+    }
+  #sfmediacon2 {
+    position: absolute;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    right: 240px;
+    top: 10px;
+    border-radius: 5%;
+    width: 170px;
   }
+#sf-twitter2 {
+background-image: url("twitter.png");
+background-size: 50px 50px;
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 50px;
+padding-right: 50px;
+order: 1;
+flex: 1;
+border-radius: 50%;
+}
+#sf-facebook2 {
+background-image: url(facebook.png);
+background-size: 50px 50px;;
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 50px;
+padding-right: 50px;
+order: 2;
+flex: 1;
+border-radius: 50%;
+}
+#sf-youtube2 {
+background-image: url(youtube.png);
+background-size: 50px 50px;
+background-position: center;
+background-repeat: no-repeat;
+padding-top: 50px;
+padding-right: 50px;
+order: 3;
+flex: 1; 
+border-radius: 50%;
+}
+#sf-youtube2:hover, #sf-facebook2:hover,
+#sf-twitter2:hover{
+box-shadow: 0px 0px 15px white;
+}
+.contactform{
+  height: 300px; margin-top:10px;
+ }
+ #toTopBtn {
+  position: fixed;
+  background-image: url(toTopBtn.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 40px;
+  height: 40px;
+  right: 20px;
+  bottom: 60px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+#toTopBtn:hover {
+box-shadow: 0px 0px 10px white;
+cursor: pointer;
+}
+.buybutton{
+  width: 150px;
+  height: 60px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 0.7em;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-left: 35%;
+  position: absolute;
+}
+.buytext{
+  margin-top: 0px; font-size: 1.1em;
+}
+.imgbuybox {
+  width: 350px; margin-left: 0px; margin-top: 0px; float: left;
+}
+html {
+  scroll-behavior: smooth;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (max-width:320px){
+
+  #sfmediacon2 {
+    position: absolute;
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    right: 10px;
+    top: 10px;
+    border-radius: 5%;
+    width:105px;
+   }
+   #sf-twitter2 {
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    }
+    #sf-facebook2 {
+    background-size: 30px 30px;;
+    padding-top: 30px;
+    padding-right: 30px;
+    }
+    #sf-youtube2 {
+    background-size: 30px 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    }
+    #toTopBtn{
+      margin-bottom: -25px;
+    }
     body {
     
     }
@@ -615,6 +764,9 @@ body {
   .imgart2 {
     display: none;
   }
+  .imgart4 {
+    display: none;
+  }
   h3 {
     margin-top: -5px;
     margin-left: 10px;
@@ -625,7 +777,7 @@ body {
     border-bottom: 2px rgba(207, 155, 43, 0.342) solid;
     padding-bottom: 5px;
   }
-  #arttime, #arttime2 {
+  #arttime, #arttime2, #arttime3, #arttime4 {
     font-size: 0.9em;
     text-align: right;
     margin-top: -20px;
@@ -634,8 +786,14 @@ body {
     margin-top: -5px; margin-left: 0; font-size: 0.85em; padding: 0px 10px 0px 10px;
   }
   .text2 {
-  margin-top: -5px; font-size: 0.85em; padding: 0px 10px 0px 10px;
+  margin-top: -5px; font-size: 1.2em; padding: 0px 10px 0px 10px;
 }
+  .text3 {
+  margin-top: -5px; font-size: 0.85em; padding: 0px 0px 0px 10px;
+  }
+  .text4 {
+  margin-top: -5px; font-size: 0.85em; padding: 0px 0px 0px 10px;
+  }
 #footsec1{
   color: rgb(231, 150, 44);
   flex: 1;
@@ -778,9 +936,53 @@ body {
     border-radius: 60px; font-size: 0.6em;
     font-weight: bold;
   }
+  .contactform{
+    height: 50px; margin-top:10px;
+  }
+
+.buybutton{
+  width: 70px;
+  height: 25px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 1.1em;
+  font-weight: bold;
+  margin-top: -15px;
+  position: absolute;
+  margin-left: 55%;
 }
+.buytext{
+  margin-top: 0px; font-size: 1em;
+}
+.imgbuybox {
+  width: 100px; margin-left: 0px; margin-top: 0px; float: left;
+}
+.sendbutton{
+  width: 50px;
+  height: 20px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 65px;
+  margin-left: -130px;
+  font-size: 1.2em;
+
+}
+#shadowboxcon {
+  z-index: 1;
+  position: absolute;
+  width: 99%;
+  margin-left: 5px;
+  margin-top: -60px;
+  height: 60px;
+  box-shadow: 0px -20px 10px -10px rgba(0, 0, 0, 0.692), 0px 20px 10px -10px rgba(0, 0, 0, 0.692);
+}
+}
+
+
+
 @media only screen and (min-width: 321px) and (max-width:375px){
-  
+
   body {
   
   }
@@ -836,16 +1038,82 @@ body {
   
   }
   #imgcon{  
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.513);
     position: relative; 
     width: 95%; 
     max-height: 208px; 
     margin-left: 2.5%;
+    margin-bottom: 95%;
   
   }
   #newscon{
-    display: none;
+    position: absolute;
+    width: 96%;
+    height: 290px;
+    top: 300px;
+    margin-left: 7.5px;
+    margin-top: 100px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url("TEXTIMG.png");
+  }
+  #newsinnercon{
+    width: 87%;
+    height: 220px;
+    margin-top: -30px;
+    padding: 0px 5px 0px 30px;
+    display: flex;
+    flex: 2;
+    
+  }
+  #newsvid{
+    padding: 30px 7px 0px 20px;
+    flex: 1;
+  }
+  #newstext {
+    font-size: 0.63em;
+    font-family: 'McLaren', cursive;
+    line-height: 0.85em;
+    padding: 20px 25px 0px 7px;
+    flex: 1;
+    text-align: justify;
+  }
+  #newsbar {
+    background-size: 180px auto;
+    background-repeat: no-repeat;
+    background-image: url("newsbar.png");
+    width: 260px;
+    height: 50px;
+    margin-left: 29%;
+    margin-top: -8px;
+  }
+  #count {
+    position: absolute;
+    margin-top: 241px;
+    margin-left: 44.5%;
+    opacity: 0.7;
+    text-align: center;
+  }
+  .nextleft{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(nextleft.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 110px;
+    margin-left: -5%;
+  }
+  .nextright{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url(nextright.png);
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    margin-top: 110px;
+    margin-left: 91%;
   }
 #artcon {
   background-image: url("artconimg.png");
@@ -853,7 +1121,7 @@ body {
   background-size: 100% 100%;
   margin-left: 5px;
   margin-right: 5px;
-  margin-top: 6%;
+  margin-top: 5%;
   width: 97.5%;
   height: 220px;
 }
@@ -888,27 +1156,36 @@ body {
 .imgart2 {
   width: 130px; padding: 0px 10px 5px 10px; float: left;
 }
+.imgart4 {
+  width: 180px; padding: 0px 10px 5px 10px; float: left;
+}
 h3 {
   margin-top: -5px;
   margin-left: 10px;
   text-shadow: 
   0px 0px 20px rgba(0, 0, 0, 0.438);
-  text-align: left;
+  text-align: center;
   font-size: 1.6em;
   border-bottom: 2px rgba(207, 155, 43, 0.342) solid;
   padding-bottom: 5px;
 }
-#arttime, #arttime2 {
+#arttime, #arttime2, #arttime3, #arttime4 {
   font-size: 0.9em;
   text-align: right;
   margin-top: -20px;
   }
-.text {
+  .text {
   margin-top: -5px; margin-left: 120px; font-size: 0.85em; padding: 0px 10px 0px 10px;
-}
-.text2 {
-margin-top: -5px; font-size: 0.85em; padding: 0px 10px 0px 10px;
-}
+  }
+  .text2 {
+    margin-top: -5px; margin-left: 120px; font-size: 1.03em; padding: 0px 10px 0px 10px;
+  }
+  .text3 {
+  margin-top: -5px; font-size: 1em; padding: 0px 0px 0px 10px;
+  }
+  .text4 {
+  margin-top: -5px; font-size: 1em; padding: 0px 0px 0px 10px;
+  }
 #footsec1{
 color: rgb(231, 150, 44);
 flex: 1;
@@ -1020,7 +1297,6 @@ margin-top: -10px;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 50px;
-
   order: 1;
   flex: 1;
 }
@@ -1042,6 +1318,22 @@ margin-top: -10px;
   order: 3;
   flex: 1; 
 }
+.buybutton{
+  width: 70px;
+  height: 25px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 1.1em;
+  font-weight: bold;
+  margin-top: -30px;
+  position: absolute;
+  margin-left: 40%;
+}
+.buytext{
+  line-height: 1.2; margin-top: 0px; font-size: 1.3em; padding: 10px 10px 10px 10px;
+}
+.imgbuybox {
+  width: 100px; margin-left: 0px; margin-top: 0px; float: left;
+}
 .subscribebutton{
   width: 120px; 
   height: 40px;
@@ -1051,8 +1343,68 @@ margin-top: -10px;
   border-radius: 60px; font-size: 0.6em;
   font-weight: bold;
 }
+.contactform{
+ height: 100px; margin-top:10px;
+ width: 200px;
 }
+#sfmediacon2 {
+  position: absolute;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  right: 10px;
+  top: 10px;
+  border-radius: 5%;
+  width:105px;
+ }
+ #sf-twitter2 {
+  background-size: 30px 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  }
+  #sf-facebook2 {
+  background-size: 30px 30px;;
+  padding-top: 30px;
+  padding-right: 30px;
+  }
+  #sf-youtube2 {
+  background-size: 30px 30px;
+  padding-top: 30px;
+  padding-right: 30px;
+  }
+  #sf-youtube2:hover {
+    box-shadow: 0px 0px 20px black;
+  }
+#toTopBtn {
+  margin-right: -15px;
+  margin-bottom:-20px;
+}
+.sendbutton{
+  width: 50px;
+  height: 20px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 120px;
+  margin-left: -130px;
+  font-size: 1.2em;
+
+}
+#shadowboxcon {
+  z-index: 1;
+  position: absolute;
+  width: 98%;
+  margin-left: 10px;
+  margin-top: -60px;
+  height: 60px;
+  box-shadow: 0px -20px 10px -10px rgba(0, 0, 0, 0.692), 0px 20px 10px -10px rgba(0, 0, 0, 0.692);
+}
+}
+
 @media only screen and (min-width: 376px) and (max-width:480px){
+  
+ 
   #shadowboxcon {
     z-index: 1;
     position: absolute;
@@ -1163,7 +1515,7 @@ margin-top: -10px;
   #newstext {
     font-size: 0.63em;
     font-family: 'McLaren', cursive;
-    line-height: 1.2em;
+    line-height: 1em;
     padding: 20px 25px 0px 7px;
     flex: 1;
     text-align: justify;
@@ -1220,32 +1572,41 @@ margin-top: -10px;
   margin-bottom: -10px; width: 90px; height: 35px;
 }
 .imggirl {
-  width: 220px; margin-top: -5px; float: left; margin-left: 10px;
+  width: 190px; margin-top: -5px; float: left; margin-left: 10px;
 }
 .imgart2 {
   width: 300px; padding: 0px 10px 5px 10px; float: left;
+}
+.imgart4 {
+  width: 280px; padding: 0px 15px 5px 10px; float: left;
 }
 h3 {
   margin-top: -5px;
   margin-left: 10px;
   text-shadow: 
   0px 0px 20px rgba(0, 0, 0, 0.438);
-  text-align: left;
+  text-align: center;
   font-size: 1.6em;
   border-bottom: 2px rgba(207, 155, 43, 0.342) solid;
   padding-bottom: 5px;
 }
-#arttime, #arttime2 {
+#arttime, #arttime2, #arttime3, #arttime4 {
   font-size: 0.9em;
   text-align: right;
   margin-top: -10px;
   }
 .text {
-  margin-top: -5px; margin-left: 120px; font-size: 0.85em; padding: 0px 10px 0px 10px;
+  margin-top: -5px; margin-left: 10px; font-size: 0.85em; padding: 0px 10px 0px 10px;
 }
 .text2 {
 margin-top: -5px; font-size: 0.85em; padding: 0px 10px 0px 10px;
 }
+.text3 {
+  margin-top: -5px; font-size: 0.8em; padding: 0px 0px 0px 10px;
+  }
+.text4 {
+  margin-top: -5px; font-size: 0.8em; padding: 0px 0px 0px 10px;
+  }
 #footsec1{
 color: rgb(231, 150, 44);
 flex: 1 0 320px;
@@ -1409,8 +1770,62 @@ margin-top: -10px;
   margin-top: 110px;
   margin-left: 93%;
 }
+.contactform {
+ height: 200px; margin-top: 30px;
+ width: 200px;
 }
+#sfmediacon2 {
+  position: absolute;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  right: 10px;
+  top: 10px;
+  border-radius: 5%;
+  width:120px;
+ }
+ #sf-twitter2 {
+  background-size: 35px 35px;
+  padding-top: 35px;
+  padding-right: 35px;
+  }
+  #sf-facebook2 {
+  background-size: 35px 35px;;
+  padding-top: 35px;
+  padding-right: 35px;
+  }
+  #sf-youtube2 {
+  background-size: 35px 35px;
+  padding-top: 35px;
+  padding-right: 35px;
+  }
+.buybutton{
+  width: 90px;
+  height: 35px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 1.1em;
+  font-weight: bold;
+  margin-top: -25px;
+  position: absolute;
+  margin-left: 40%;
+}
+.buytext{
+  line-height: 1em; margin-top: 0px; font-size: 1.3em; padding: 10px 10px 10px 10px;
+}
+.imgbuybox {
+  width: 200px; margin-left: 0px; margin-top: 0px; float: left;
+}
+.sendbutton{
+  width: 90px;
+  height: 30px;
+  background-color: rgb(233, 143, 25); 
+  border-radius: 60px; font-size: 0.8em;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 240px;
+  margin-left: -170px;
 
+}
 
 
 @media only screen and (min-width:769px){

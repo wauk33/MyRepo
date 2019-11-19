@@ -1,62 +1,6 @@
-/* const intro = "Podaj imię:";
-var rezultat;
-var a = 1;
-var b = 2;
-var wynik;
-wynik = (a > b) ? 'Zmienna a jest większa niż b.' : 'Zmienna a jest mniejsza niz b.';
-
-function funkcja(Wiek, WiekSamochodu, WiekZony)
-{
-    var person = Wiek + WiekSamochodu + WiekZony;
-    return person;
-
-}
-document.write(funkcja(25, 18, 30)); */ 
-
-/*
-function drawMap (x){
-    const xArr = [];
-    for(let i=0; i<=x; i++){
-        xArr[i] = i;
-        document.write(xArr[i]);
-    }
-}
-drawMap (5);
-*/
-
-/*
-var div = $( "div" );
- 
-function runIt() {
-  div
-    .show( "slow" )
-    .animate({ left: "+=200" }, 2000 )
-    .slideToggle( 1000 )
-    .slideToggle( "fast" )
-    .animate({ left: "-=200" }, 1500 )
-    .hide( "slow" )
-    .show( 1200 )
-    .slideUp( "normal", runIt );
-}
- 
-function showIt() {
-  var n = div.queue( "fx" );
-  $( "span" ).text( n.length );
-  setTimeout( showIt, 100 );
-}
- 
-runIt();
-showIt(); */
-
 document.addEventListener("DOMContentLoaded", function () {
 
 
-
-  let vbut;
-vbut = document.getElementById("vbuttonid");
-vbut.addEventListener('click', function(){
-  window.scrollTo(0, 1450);
-});
 
 
   //main auto slider for images
@@ -71,7 +15,7 @@ vbut.addEventListener('click', function(){
     .appendTo('#imgcon');
   },  4000);
 
-  //down auto slider for quotes
+  //bottom auto slider for quotes
   $("#footsec1 > img:gt(0)").hide();
 
   setInterval(function() {
@@ -112,6 +56,20 @@ vbut.addEventListener('click', function(){
         showSlides(slideIndex = 3);
       }
       
+  //News scroller
+  let vbut;
+  let news1ypos = 700;
+  let news2ypos = 1450; 
+  let news3ypos = 2200;
+  let news4ypos = 2900;
+
+vbut = document.getElementById("vbuttonid");
+vbut.addEventListener('click', function(){
+  if (slideIndex === 3){window.scrollTo(0, news3ypos);}
+  if (slideIndex === 2){window.scrollTo(0, news2ypos);}
+  if (slideIndex === 1){window.scrollTo(0, news1ypos);}
+
+});
 
   //function
     function showSlides(n) {
@@ -139,43 +97,47 @@ vbut.addEventListener('click', function(){
 
 
 //show current date
-function printDate(){
-  var month = new Date().getMonth() + 1
-  var day = new Date().getDate()
-  var year = new Date().getFullYear()
+function printDateToday(){
+  let month = new Date().getMonth() + 1
+  let day = new Date().getDate()
+  let year = new Date().getFullYear()
   let hour = new Date().getHours();
   let minutes = new Date().getMinutes();
-  return (month + "/" + day + "/" + year + " " + hour + ":" + minutes);
+  return (day + "/" + month + "/" + year + " " + hour + ":" + minutes);
   }
+
+//show modified date (random)
+  function printDate(x, z){
+    let month = new Date().getMonth() - x
+    let day = new Date().getDate() - x
+    let year = new Date().getFullYear();
+    let hour = new Date().getHours(); - z
+    let minutes = new Date().getMinutes(); - z
+    return (day + "/" + month + "/" + year + " " + hour + ":" + minutes);
+    }
 
   let arttime = document.getElementById("arttime");
-  arttime.innerText = printDate();
+  arttime.innerText = printDateToday();
   let arttime2 = document.getElementById("arttime2");
-  arttime2.innerText = printDate();
+  arttime2.innerText = printDate(1,2);
   let arttime3 = document.getElementById("arttime3");
-  arttime3.innerText = printDate();
+  arttime3.innerText = printDate(2,2);
+  let arttime4 = document.getElementById("arttime4");
+  arttime4.innerText = printDate(3,2);
     
-
-/*
-  let li = document.getElementsByTagName("li");
-
-  li[0].onclick = function (){
-    location.replace("/index.html");
-  }
   
-  li[2].onclick = function (){
-    location.replace("/buy.html");
+let backToTopButton = document.getElementById("toTopBtn");
+window.onscroll = function(){
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
   }
+};
 
-  li[3].onclick = function (){
-    window.location.replace("/contactus.html");
-  }
-*/
-resizeimgcontener();
-function resizeimgcontener(){
-  let imgcon = document.getElementById("imgcon");
-  let img = document.getElementsByClassName("imgs");
+toTopBtn.addEventListener('click', function(){
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}); 
 
-  imgs[0].setAttribute("height", "100%");
-}
 }); 
