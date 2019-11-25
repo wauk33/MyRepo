@@ -1,0 +1,126 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: grey;
+  position: relative;
+}
+
+.textred {
+  color: #269feae1;
+}
+
+/* NAVIGATION */
+nav {
+  height: 60px;
+  text-transform: uppercase;
+}
+
+nav a, nav i {
+  color: #ffffff;
+}
+
+nav a:hover {
+  color: #269feae1;
+}
+
+nav i {
+  padding: 5px 10px;
+}
+
+nav .navbar-brand {
+  font-weight: bold;
+}
+
+/* HEADER */
+header {
+  color: #ffffff;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+header h2 {
+  font-size: 20px;
+  padding: 10px;
+}
+
+header .hero-img {
+  position: relative;
+  background-image: url("images/heroimg-small.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+header .hero-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.795);
+  z-index: -10;
+}
+
+header .hero-text {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header .hero-btn {
+  position: relative;
+  top: 20px;
+  padding: 10px;
+}
+
+header .hero-arrow {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  font-size: 35px;
+  color: #ffff;
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite;
+}
+
+header .hero-arrow:hover {
+  color: #269feae1;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
