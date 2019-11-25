@@ -58,7 +58,7 @@ header h2 {
 
 header .hero-img {
   position: relative;
-  background-image: url("images/heroimg-small.jpg");
+  background-image: url("./images/heroimg-small.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
