@@ -22,4 +22,21 @@ $(document).ready(function () {
         }
     });
 });
+
+const highlight = document.querySelectorAll(".highlight");
+const about = document.getElementById("about");
+const icon = about.querySelectorAll("i");
+
+for(let i=0; i<highlight.length; i++){
+highlight[i].addEventListener('mouseout', function(){
+    if (icon[i].classList.contains("ihover")){
+icon[i].classList.remove("ihover");
+}
+    else{
+highlight[i].addEventListener('mouseover', function(){
+icon[i].classList.add("ihover");
+})
+}
+})
+}
 })

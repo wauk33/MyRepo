@@ -10,23 +10,26 @@ body
     position: relative
 .textblue
     color: $bluecolor
+.scroll-fix
 .scroll-fix::before
     content: ''
-    display: block
-    height: 3.5rem
-    margin-top: -3.5rem
+    height: 4rem
+    margin-top: -4rem
+    z-index: 100
 .wrapper
     width: 80%
+    padding: 2rem 0
     margin: 0 auto
     h2
         text-align: center
         text-transform: uppercase
+        margin-top: -10px
 .underline
     margin: 0 auto
     width: 70px
     height: 5px
     background-color: $bluecolor
-    margin-bottom: 30px
+    margin-bottom: 50px
 
 
 
@@ -130,21 +133,21 @@ header
 
 .hero-btn
     position: relative
-    top: 20px
-    padding: 5px 10px 5px 10px
+    top: 30px
+    padding: 10px 10px 10px 10px
 
     
 .hero-arrow
     width: 100%
-    height: 50px
+    height: 80px
     display: flex
     justify-content: center
     align-items: center
     position: absolute
-    bottom: 0
+    bottom: -10px
     font-size: 35px
     color: #ffff
-    animation: bounce 2s infinite
+    animation: bounce 2s infinite 3s
 
 .hero-arrow:hover
     color: $bluecolor
@@ -153,17 +156,23 @@ header
 /*             ABOUT             */
 
 #about
+    .wrapper
+        padding-top: 6rem
+        padding-bottom: 6rem
     i
         font-size: 30px
         margin-top: 30px
+        margin-bottom: 15px
+    .ihover
+        animation: swing 2s infinite
     h2 
         color: #3d3d3d
     h5 
         text-transform: uppercase
 .highlight
     transition: color 0.2s
+.visibility
     visibility: hidden
-    
 .highlight:hover
     color: $bluecolor
 
@@ -180,6 +189,7 @@ header
     height: 100%
     margin-top: -2rem
     z-index: 0
+    
     .about-shadow
         position: absolute
         width: 100%
@@ -187,22 +197,88 @@ header
         background-color: rgba(0, 0, 0, 0.65)
         z-index: -10
     .abh
-        margin-top: 30px
-        margin-bottom: 30px
+        margin-top: 35px
+        margin-bottom: 10px
     .wrapper
-        padding: 5rem 0
-        color: #dddddd
+        padding: 6rem 0
+        color: #ffffff
     h2
         color: #ddd
         z-index: 10
+        margin-top: -20px
+
     h5 
         text-transform: uppercase
+        font-weight: bold
+        transition: color 0.3s
     h5:hover 
         color: $bluecolor
+    p 
+        transition: color 0.3s
     p:hover 
         color: $bluecolor 
     i 
-        font-size: 60px
+        font-size: 50px
         padding: 10px
 
+/* ------- CAROUSEL ------ */
 
+#gallery
+    #carddeck
+        h5
+            text-transform: uppercase
+            font-weight: bold
+            text-align: center
+        p 
+            text-align: center
+        .card
+            margin-bottom: 50px
+
+    #carousel
+        .carousel-item
+            position: relative
+            width: 100%
+            height: 450px
+        img 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        .card-title
+            text-align: center
+            font-weight: bold
+        .card-text
+            text-align: center
+        
+            .underline
+                margin-bottom: 60px
+        .carousel-caption
+            h5 
+                font-weight: bold
+            background-color: #000000a3
+            left: 0
+            right: 0
+            padding: 30px 50px
+        .carousel-indicators
+            bottom: 15px
+#prices
+    .wrapper
+        width: 95%
+    .price-box
+        margin: 20px 10px
+        background-color: #ffffff
+        padding: 30px
+    h4 
+        text-transform: uppercase
+        font-weight: bold
+        color: $bluecolor 
+    span 
+        font-weight: bold
+    .price
+        font-size: 30px
+        font-weight: bold
+    .btn
+        text-transform: uppercase
+        padding: 10px 20px
+    i 
+        font-size: 30px
