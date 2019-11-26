@@ -1,33 +1,57 @@
 @import reset
+$bluecolor: #269feae1
 
 html 
-    
     scroll-behavior: smooth
+    
 body
-    font-family: 'Roboto', sans-serif
+    font-family: 'Montserrat', sans-serif
     background-color: grey
     position: relative
-.textred
-    color: #269feae1
+.textblue
+    color: $bluecolor
+.scroll-fix::before
+    content: ''
+    display: block
+    height: 3.5rem
+    margin-top: -3.5rem
+.wrapper
+    width: 80%
+    margin: 0 auto
+    h2
+        text-align: center
+        text-transform: uppercase
+.underline
+    margin: 0 auto
+    width: 70px
+    height: 5px
+    background-color: $bluecolor
+    margin-bottom: 30px
+
+
 
 
 
 
 /* NAVIGATION */
-nav
-    height: 60px
+nav  
     text-transform: uppercase
     a, i
         color: #ffffff
 
     a:hover
-        color:#269feae1
+        color: $bluecolor
 
     i
-        padding: 5px 10px
+        padding: 5px 0px 5px 10px
 
     .navbar-brand
-        font-weight: bold
+        font-size: 25px
+        font-family: 
+  
+
+.navbarshadow
+    background-color: rgba(0,0,0,0.8)
 
 /* HEADER */
 header
@@ -35,54 +59,150 @@ header
 
     h1 
         text-transform: uppercase
-        font-size: 30px
+        font-size: 3rem
+        padding: 0px 20px 0px 20px
     h2 
         font-size: 20px
         padding: 10px
-    .hero-img
-        position: relative
-        background-image: url("./images/heroimg-small.jpg")
-        background-position: center
-        background-size: cover
-        background-attachment: fixed
-        width: 100%
-        height: 100vh
-        z-index: 0
-        
-    .hero-shadow
-        position: absolute
-        width: 100%
-        height: 100%
-        background-color: rgba(0, 0, 0, 0.795)
-        z-index: -10
+@media (max-width: 319px)
+    header
+        h1 
+            font-size: 1.8rem
+        h2
+            font-size: 0.9em
 
-    .hero-text
-        height: 100%
-        display: flex
-        flex-flow: column nowrap
-        justify-content: center
-        align-items: center
-        text-align: center
+@media (min-width: 320px)
+    header
+        h1 
+            font-size: 2rem
+        h2 
+            font-size: 0.9em
+@media (min-width: 360px)
+    header
+        h1  
+            font-size: 2.1rem
+        h2 
+            font-size: 1em
 
+@media (min-width: 396px)
+    header
+        h1  
+            font-size: 2.2rem
+        h2 
+            font-size: 1.1em
+@media (min-width: 436px)
+    header
+        h2 
+            font-size: 1.1em
     .hero-btn
-        position: relative
-        top: 20px
-        padding: 10px
+        margin-top: -20px
+
     
-    .hero-arrow
-        width: 100%
-        height: 50px
-        display: flex
-        justify-content: center
-        align-items: center
+
+.hero-img
+    position: relative
+    background-image: url("./images/heroimg-small.jpg")
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    width: 100%
+    height: 100vh
+    z-index: 0
+        
+.hero-shadow
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.795)
+    z-index: -10
+
+.hero-text
+    height: 100%
+    display: flex
+    flex-flow: column nowrap
+    justify-content: center
+    align-items: center
+    text-align: center
+    a   
+        text-transform: uppercase
+        letter-spacing: 2px
+        font-size: 11px
+
+.hero-btn
+    position: relative
+    top: 20px
+    padding: 5px 10px 5px 10px
+
+    
+.hero-arrow
+    width: 100%
+    height: 50px
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    bottom: 0
+    font-size: 35px
+    color: #ffff
+    animation: bounce 2s infinite
+
+.hero-arrow:hover
+    color: $bluecolor
+    text-decoration: none
+
+/*             ABOUT             */
+
+#about
+    i
+        font-size: 30px
+        margin-top: 30px
+    h2 
+        color: #3d3d3d
+    h5 
+        text-transform: uppercase
+.highlight
+    transition: color 0.2s
+    visibility: hidden
+    
+.highlight:hover
+    color: $bluecolor
+
+/* ABOUT-HERO */
+#about-hero
+    display: flex
+    align-items: center
+    position: relative
+    background-image: url(./images/aboutheroimg-small.jpg)
+    background-size: cover
+    background-attachment: fixed
+    background-position: center
+    width: 100%
+    height: 100%
+    margin-top: -2rem
+    z-index: 0
+    .about-shadow
         position: absolute
-        bottom: 0
-        font-size: 35px
-        color: #ffff
-        animation: bounce 2s infinite
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.65)
+        z-index: -10
+    .abh
+        margin-top: 30px
+        margin-bottom: 30px
+    .wrapper
+        padding: 5rem 0
+        color: #dddddd
+    h2
+        color: #ddd
+        z-index: 10
+    h5 
+        text-transform: uppercase
+    h5:hover 
+        color: $bluecolor
+    p:hover 
+        color: $bluecolor 
+    i 
+        font-size: 60px
+        padding: 10px
 
-    .hero-arrow:hover
-        color:#269feae1
-        text-decoration: none
 
- 

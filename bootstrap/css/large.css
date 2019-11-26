@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=large.css.map */
+.hero-img {
+  position: relative;
+  background-image: url("./images/heroimg-large.jpg");
+  width: 100%;
+  height: 100vh;
+}
+/*# sourceMappingURL=large.css.map */

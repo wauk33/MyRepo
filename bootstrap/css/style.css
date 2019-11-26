@@ -10,18 +10,42 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: grey;
   position: relative;
 }
 
-.textred {
+.textblue {
   color: #269feae1;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 3.5rem;
+  margin-top: -3.5rem;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  margin: 0 auto;
+  width: 70px;
+  height: 5px;
+  background-color: #269feae1;
+  margin-bottom: 30px;
 }
 
 /* NAVIGATION */
 nav {
-  height: 60px;
   text-transform: uppercase;
 }
 
@@ -34,11 +58,15 @@ nav a:hover {
 }
 
 nav i {
-  padding: 5px 10px;
+  padding: 5px 0px 5px 10px;
 }
 
 nav .navbar-brand {
-  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbarshadow {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* HEADER */
@@ -48,7 +76,8 @@ header {
 
 header h1 {
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 3rem;
+  padding: 0px 20px 0px 20px;
 }
 
 header h2 {
@@ -56,7 +85,52 @@ header h2 {
   padding: 10px;
 }
 
-header .hero-img {
+@media (max-width: 319px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h2 {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 320px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header h2 {
+    font-size: 0.9em;
+  }
+}
+
+@media (min-width: 360px) {
+  header h1 {
+    font-size: 2.1rem;
+  }
+  header h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 396px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header h2 {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 436px) {
+  header h2 {
+    font-size: 1.1em;
+  }
+  .hero-btn {
+    margin-top: -20px;
+  }
+}
+
+.hero-img {
   position: relative;
   background-image: url("./images/heroimg-small.jpg");
   background-position: center;
@@ -67,7 +141,7 @@ header .hero-img {
   z-index: 0;
 }
 
-header .hero-shadow {
+.hero-shadow {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -75,7 +149,7 @@ header .hero-shadow {
   z-index: -10;
 }
 
-header .hero-text {
+.hero-text {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,13 +167,19 @@ header .hero-text {
   text-align: center;
 }
 
-header .hero-btn {
-  position: relative;
-  top: 20px;
-  padding: 10px;
+.hero-text a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 11px;
 }
 
-header .hero-arrow {
+.hero-btn {
+  position: relative;
+  top: 20px;
+  padding: 5px 10px 5px 10px;
+}
+
+.hero-arrow {
   width: 100%;
   height: 50px;
   display: -webkit-box;
@@ -119,8 +199,91 @@ header .hero-arrow {
           animation: bounce 2s infinite;
 }
 
-header .hero-arrow:hover {
+.hero-arrow:hover {
   color: #269feae1;
   text-decoration: none;
+}
+
+/*             ABOUT             */
+#about i {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+#about h2 {
+  color: #3d3d3d;
+}
+
+#about h5 {
+  text-transform: uppercase;
+}
+
+.highlight {
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  visibility: hidden;
+}
+
+.highlight:hover {
+  color: #269feae1;
+}
+
+/* ABOUT-HERO */
+#about-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  background-image: url(./images/aboutheroimg-small.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -2rem;
+  z-index: 0;
+}
+
+#about-hero .about-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: -10;
+}
+
+#about-hero .abh {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#about-hero .wrapper {
+  padding: 5rem 0;
+  color: #dddddd;
+}
+
+#about-hero h2 {
+  color: #ddd;
+  z-index: 10;
+}
+
+#about-hero h5 {
+  text-transform: uppercase;
+}
+
+#about-hero h5:hover {
+  color: #269feae1;
+}
+
+#about-hero p:hover {
+  color: #269feae1;
+}
+
+#about-hero i {
+  font-size: 60px;
+  padding: 10px;
 }
 /*# sourceMappingURL=style.css.map */
