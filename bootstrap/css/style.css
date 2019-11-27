@@ -602,7 +602,7 @@ header h2 {
 #contact .jumbotron {
   padding: 8rem 0;
   position: relative;
-  background-image: url(./images/bgcontact.jpg);
+  background-image: url("./images/bgcontact.jpg");
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
