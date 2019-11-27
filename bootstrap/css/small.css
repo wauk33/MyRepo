@@ -27,6 +27,19 @@ header h2 {
 }
 
 #team .slick-prev {
-  margin-left: -20px;
+  margin-left: -10px;
+}
+
+#team .slick-prev, #team .slick-next {
+  width: 30px;
+  height: 30px;
+}
+
+#team .team-shadow {
+  margin-top: -4rem;
+}
+
+#contact .contact-shadow {
+  margin-top: -8rem;
 }
 /*# sourceMappingURL=small.css.map */

@@ -217,7 +217,7 @@ header h2 {
 }
 
 #about i {
-  font-size: 30px;
+  font-size: 40px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
@@ -443,8 +443,27 @@ header h2 {
   text-align: center;
 }
 
+#team .jumbotron {
+  position: relative;
+  background-image: url(./images/team/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: 0;
+}
+
+#team .team-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -10;
+  margin-top: -2rem;
+}
+
 #team h2 {
   margin-top: 30px;
+  color: #efefef;
 }
 
 #team .card img {
@@ -476,12 +495,32 @@ header h2 {
 }
 
 #team .slick-prev:before, #team .slick-next:before {
-  color: #269feae1;
+  color: #ffffff;
+  opacity: 1;
   font-size: 30px;
+}
+
+#team .slick-prev:before {
+  margin-left: -5px;
+}
+
+#team .slick-next:before {
+  margin-left: -5px;
+}
+
+#team .slick-prev, #team .slick-next {
+  background-color: #00000078;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
 }
 
 #team .slick-prev {
   margin-left: -10px;
+}
+
+#team .slick-next {
+  margin-right: -10px;
 }
 
 #team .card-footer {
@@ -503,5 +542,112 @@ header h2 {
 #team .card-footer i {
   font-size: 17px;
   padding-right: 10px;
+}
+
+#team .card:hover {
+  -webkit-box-shadow: 0px 0px 15px #269feae1;
+          box-shadow: 0px 0px 15px #269feae1;
+  -webkit-transition: -webkit-box-shadow 1s;
+  transition: -webkit-box-shadow 1s;
+  transition: box-shadow 1s;
+  transition: box-shadow 1s, -webkit-box-shadow 1s;
+}
+
+/*      ACHIEVEMENTS      */
+#achievements {
+  margin-top: -2rem;
+  text-align: center;
+}
+
+#achievements .jumbotron {
+  margin-bottom: 0;
+}
+
+#achievements .Apadding {
+  padding: 6rem 0rem 6rem 0rem;
+}
+
+#achievements .wrapper {
+  width: 90%;
+}
+
+#achievements .wrapper .achievement {
+  padding: 20px 0px;
+}
+
+#achievements i {
+  font-size: 50px;
+  padding: 25px;
+  color: #269feae1;
+  text-shadow: 1px 1px 1px black;
+}
+
+#achievements p {
+  text-transform: uppercase;
+}
+
+/* CONTACT */
+#contact h2 {
+  color: #dddddd;
+}
+
+#contact h3 {
+  text-transform: uppercase;
+}
+
+#contact .underline {
+  background-color: #dddddd;
+}
+
+#contact .jumbotron {
+  padding: 8rem 0;
+  position: relative;
+  background-image: url(./images/bgcontact.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  z-index: 0;
+}
+
+#contact .contact-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  margin-top: -8rem;
+  z-index: -10;
+}
+
+#contact .contact-us {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .contact-item {
+  margin: 30px 0;
+  padding: 20px;
+}
+
+#contact .social-media {
+  font-size: 26px;
+}
+
+#contact .social-media a {
+  color: #ffffff;
+  padding: 10px 8px;
+}
+
+#contact .social-media a:hover {
+  color: #269feae1;
+}
+
+#contact .social-media a:hover i:hover {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
 }
 /*# sourceMappingURL=style.css.map */
