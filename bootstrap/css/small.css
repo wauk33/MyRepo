@@ -21,4 +21,12 @@ header h2 {
 #slider #carddeck .card {
   margin-bottom: 50px;
 }
+
+#team .slick-prev:before, #team .slick-next:before {
+  font-size: 40px;
+}
+
+#team .slick-prev {
+  margin-left: -20px;
+}
 /*# sourceMappingURL=small.css.map */

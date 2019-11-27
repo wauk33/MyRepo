@@ -33,8 +33,6 @@ body {
 }
 
 .wrapper h2 {
-  text-align: center;
-  text-transform: uppercase;
   margin-top: -10px;
 }
 
@@ -44,6 +42,11 @@ body {
   height: 5px;
   background-color: #269feae1;
   margin-bottom: 50px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* NAVIGATION */
@@ -85,6 +88,7 @@ header h1 {
 header h2 {
   font-size: 20px;
   padding: 10px;
+  text-transform: none;
 }
 
 @media (max-width: 319px) {
@@ -313,6 +317,11 @@ header h2 {
 }
 
 /* ------- CAROUSEL ------ */
+#gallery .wrapper {
+  width: 90%;
+  margin-bottom: 100px;
+}
+
 #gallery #carddeck h5 {
   text-transform: uppercase;
   font-weight: bold;
@@ -369,14 +378,34 @@ header h2 {
   bottom: 15px;
 }
 
+#prices {
+  margin-top: -8rem;
+}
+
 #prices .wrapper {
-  width: 95%;
+  width: 90%;
+}
+
+#prices h2 {
+  margin-top: -30px;
+  padding-top: 50px;
 }
 
 #prices .price-box {
+  -webkit-box-shadow: 3px 3px 10px black;
+          box-shadow: 3px 3px 10px black;
   margin: 20px 10px;
   background-color: #ffffff;
   padding: 30px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+#prices .price-box:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #prices h4 {
@@ -401,5 +430,78 @@ header h2 {
 
 #prices i {
   font-size: 30px;
+}
+
+#prices .price-foottext p {
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+/*   TEAM    */
+#team {
+  margin-top: -2rem;
+  text-align: center;
+}
+
+#team h2 {
+  margin-top: 30px;
+}
+
+#team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .card-body {
+  font-size: 14px;
+  height: 250px;
+}
+
+@media screen and (min-width: 400px) {
+  #team .card-body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #team .card-body {
+    height: 200px;
+  }
+}
+
+#team .card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#team .slick-prev:before, #team .slick-next:before {
+  color: #269feae1;
+  font-size: 30px;
+}
+
+#team .slick-prev {
+  margin-left: -10px;
+}
+
+#team .card-footer {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 400px) {
+  #team .card-footer {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #team .card-footer {
+    font-size: 16px;
+  }
+}
+
+#team .card-footer i {
+  font-size: 17px;
+  padding-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */

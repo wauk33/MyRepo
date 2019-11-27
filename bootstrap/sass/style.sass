@@ -21,8 +21,6 @@ body
     padding: 2rem 0
     margin: 0 auto
     h2
-        text-align: center
-        text-transform: uppercase
         margin-top: -10px
 .underline
     margin: 0 auto
@@ -30,6 +28,9 @@ body
     height: 5px
     background-color: $bluecolor
     margin-bottom: 50px
+h2 
+    text-align: center
+    text-transform: uppercase
 
 
 
@@ -67,6 +68,7 @@ header
     h2 
         font-size: 20px
         padding: 10px
+        text-transform: none
 @media (max-width: 319px)
     header
         h1 
@@ -224,6 +226,9 @@ header
 /* ------- CAROUSEL ------ */
 
 #gallery
+    .wrapper
+        width: 90%
+        margin-bottom: 100px
     #carddeck
         h5
             text-transform: uppercase
@@ -262,12 +267,21 @@ header
         .carousel-indicators
             bottom: 15px
 #prices
+    margin-top: -8rem
     .wrapper
-        width: 95%
+        width: 90%
+    h2
+        margin-top: -30px
+        padding-top: 50px
+
     .price-box
+        box-shadow: 3px 3px 10px black
         margin: 20px 10px
         background-color: #ffffff
         padding: 30px
+        transition: transform 0.5s
+    .price-box:hover
+        transform: scale(1.05)
     h4 
         text-transform: uppercase
         font-weight: bold
@@ -282,3 +296,45 @@ header
         padding: 10px 20px
     i 
         font-size: 30px
+    .price-foottext
+        p   
+            margin-top: 50px
+            font-size: 18px
+
+/*   TEAM    */
+#team
+    margin-top: -2rem
+    text-align: center
+    h2 
+        margin-top: 30px
+    .card
+        img 
+            height: 300px
+            object-fit: cover
+    .card-body
+            font-size: 14px
+            height: 250px
+            @media screen and (min-width: 400px)
+                font-size: 16px
+            @media screen and (min-width: 500px) 
+                height: 200px
+
+    .card-title
+        text-transform: uppercase
+        font-weight: bold
+    .slick-prev:before, .slick-next:before
+        color: $bluecolor
+        font-size: 30px
+    .slick-prev
+        margin-left: -10px
+    .card-footer
+        font-size: 14px
+        @media screen and (min-width: 400px)
+            font-size: 17px
+        @media screen and (min-width: 750px) 
+            font-size: 16px
+        i
+            font-size: 17px
+            padding-right: 10px
+
+    

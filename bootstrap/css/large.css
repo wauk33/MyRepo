@@ -4,4 +4,24 @@
   width: 100%;
   height: 100vh;
 }
+
+@media screen and (min-width: 1005px) {
+  #team .card-body {
+    height: 300px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #team .card-body {
+    height: 300px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #team .card-footer {
+    font-size: 17px;
+  }
+}
 /*# sourceMappingURL=large.css.map */

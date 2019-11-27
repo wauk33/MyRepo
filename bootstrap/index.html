@@ -4,11 +4,19 @@
   <meta charset="UTF-8-pl">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
   <script src="https://kit.fontawesome.com/eebbdab8a5.js" crossorigin="anonymous"></script>
+
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  
   <link rel="stylesheet" href=".\css\style.css" type="text/css">
   <link rel="stylesheet" href=".\css\animate.css" type="text/css"/> 
+  
   <link media="screen and (min-width: 576px)"  rel="stylesheet" href=".\css\small.css" type="text/css">
   <link media="screen and (min-width: 768px)"  rel="stylesheet" href=".\css\medium.css" type="text/css">
   <link media="screen and (min-width: 992px)"  rel="stylesheet" href=".\css\large.css" type="text/css">
@@ -35,10 +43,13 @@
                 <a class="nav-link" href="#gallery">Galeria</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Zespół</a>
+                <a class="nav-link" href="#prices">Ceny</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Skontaktuj się</a>
+                <a class="nav-link" href="#team">Zespół</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#contact">Skontaktuj się</a>
             </li>
           </ul>
         </div>
@@ -196,7 +207,10 @@
 </section>
 <!-- PRICES -->
 <section id="prices" class="scroll-fix">
-<div class="jumbotron jumbotron-fluid">
+<div class="jumbotron jumbotron-fluid bg-light">
+    <div class="about"><h2>ceny</h2>
+      <div class="underline"></div>
+    </div>
   <div class="wrapper row text-center justify-content-center">
     <div class="col-sm-6 col-md-4">
       <div class="price-box">
@@ -205,9 +219,9 @@
         <p><i class="fas fa-mobile-alt"></i></p>
         <span>Długość gry:</span><p>Krótka</p>
         <span>Grafika:</span><p>Średnia</p>
-        <span>Multiplayer:</span><p>Nie</p>
+        <span>Multiplayer:</span><p>Tak</p>
         <p class="price">1299zł</p>
-        <div class="btn btn-dark">kup teraz</div>
+        <div class="btn btn-danger">kup teraz</div>
       </div>
     </div>
    <div class="col-sm-6 col-md-4">
@@ -219,7 +233,7 @@
         <span>Grafika:</span><p>Bardzo dobra</p>
         <span>Multiplayer:</span><p>Tak</p>
         <p class="price">2299zł</p>
-        <div class="btn btn-dark">kup teraz</div>
+        <div class="btn btn-danger">kup teraz</div>
       </div>
     </div>
      <div class="col-sm-6 col-md-4">
@@ -231,12 +245,76 @@
         <span>Grafika:</span><p>Bardzo dobra</p>
         <span>Multiplayer:</span><p>Tak</p>
         <p class="price">2699zł</p>
-        <div class="btn btn-dark">kup teraz</div>
+        <div class="btn btn-danger">kup teraz</div>
       </div>
     </div>
+    <div class="price-foottext">
+    <p class="lead">Skorzystaj z jednego z trzech pakietów lub <a href="#contact">skontaktuj się</a> z nami i ustal indywidualne warunki!</p>
+  </div>
   </div>
 </div>
 </section> 
+<!-- TEAM -->
+<section id="team" class="scroll-fix">
+  <div class="jumbotron jumbotron-fluid">
+  <div class="about"><h2>Zespół</h2>
+    <div class="underline"></div>
+  </div>
+
+  <div class="card-deck wrapper team-slick">
+    <div class="card">
+      <img src="css\images\team\worker1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">CEO</h5>
+        <p class="card-text">"Współzałożyciel, Dyrektor i Vision Head. Dbam o funckjonowanie zespołów i procesy rozwoju wewnątrz grup projektowych. Zajmuję się zarządzaniem strukturami firmy oraz jej projektami."</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><i class="fas fa-envelope"></i><a href="">jan.kosiniak@megagames.pl</a></small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="css\images\team\worker2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">HR Specialist</h5>
+        <p class="card-text">"Zajmuję się poszukiwaniem osób mających realny wpływ na rozwój oraz odkrywaniem nowych talentów."</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><i class="fas fa-envelope"></i><a href="">magda.hr@megagames.pl</a></small>
+      </div>
+    </div>
+    <div class="card">
+      <img src="css\images\team\worker3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Graphic Designer</h5>
+        <p class="card-text">"Jako głowny grafik naszej firmy jestem odpowiedzialny za oprawę gier 3D oraz 2D. Tworzę także na potrzeby WWW i zajmuję się obróbką zdjęć, w tym naszych, które własnie przeglądasz."</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted"><i class="fas fa-envelope"></i><a href="">marek.dywrat@megagames.pl</a></small>
+      </div>
+    </div>
+    <div class="card">
+        <img src="css\images\team\worker4.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lawyer</h5>
+          <p class="card-text">"Jestem prawnikiem z kilkunastoletnim doświadczeniem, dbam o wszelkie kwestie prawne w naszej firmie. Mój zespół pracuje nad kwestiami rejestrowania praw do materiałów oraz praw autorskich."</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted"><i class="fas fa-envelope"></i><a href="">joanna.wessen@megagames.pl</a></small>
+        </div>
+      </div>
+      <div class="card">
+          <img src="css\images\team\worker5.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Service Engineer</h5>
+            <p class="card-text">"Pracuję w zawodzie od 5 lat i wraz z zespołem sprawujemy pieczę nad działaniem systemów informatycznych i ich bezpieczeństem."</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted"><i class="fas fa-envelope"></i><a href="">mateusz.ciupa@megagames.pl</a></small>
+          </div>
+        </div>
+  </div>
+</div>
+</section>
 </body>
 
 
@@ -249,6 +327,9 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
 <script src="js\jquery.waypoints.min"></script>
 <script src="js\animation.js"></script>
 <script src="js\main.js" language="javascript"></script>

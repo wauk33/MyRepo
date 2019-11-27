@@ -13,7 +13,6 @@ function addNavShadow(){
 
 document.addEventListener('scroll', addNavShadow);
 
-$(document).ready(function () {
     $(document).click(function (event) {
         var clickover = $(event.target);
         var _opened = $(".navbar-collapse").hasClass("show");
@@ -21,8 +20,8 @@ $(document).ready(function () {
             $(".navbar-toggler").click();
         }
     });
-});
-
+    
+// #about icons on mouse over animation
 const highlight = document.querySelectorAll(".highlight");
 const about = document.getElementById("about");
 const icon = about.querySelectorAll("i");
@@ -35,8 +34,63 @@ icon[i].classList.remove("ihover");
     else{
 highlight[i].addEventListener('mouseover', function(){
 icon[i].classList.add("ihover");
-})
+})}})}
+
+$('.team-slick').slick({
+    autoplay: true,
+    infinite: true,
+    mobileFirst: true,
+    autoplaySpeed: 3500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: 
+[
+{
+    breakpoint: 1,
+    settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true
+    }
+},
+{
+    breakpoint: 400,
+    settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+    }
+},
+{
+    breakpoint: 768,
+    settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+    }
+},
+{
+    breakpoint: 992,
+    settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+    }
+},
+{
+    breakpoint: 1200,
+    settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1
+    }
+},
+{
+    breakpoint: 1600,
+    settings: {
+        slidesToShow: 4,
+        slidesToScroll: 1
+    }
 }
-})
-}
+]
+  });
+
 })
