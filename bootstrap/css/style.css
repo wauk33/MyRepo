@@ -320,6 +320,7 @@ header h2 {
 /* ------- CAROUSEL ------ */
 #gallery .wrapper {
   width: 90%;
+  padding: 2rem 0 0 0;
   margin-bottom: 100px;
 }
 
