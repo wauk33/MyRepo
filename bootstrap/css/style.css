@@ -213,7 +213,7 @@ header h2 {
 
 /*             ABOUT             */
 #about .wrapper {
-  padding-top: 6rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
 }
 
@@ -317,10 +317,10 @@ header h2 {
   padding: 10px;
 }
 
-/* ------- CAROUSEL ------ */
+/* ------- GALLERY ------ */
 #gallery .wrapper {
   width: 90%;
-  padding: 2rem 0 0 0;
+  padding: 3rem 0 0 0;
   margin-bottom: 100px;
 }
 
@@ -386,19 +386,20 @@ header h2 {
 
 #prices .wrapper {
   width: 90%;
+  padding: 3rem 0 0 0;
 }
 
 #prices h2 {
-  margin-top: -30px;
+  margin-top: 0px;
   padding-top: 50px;
 }
 
 #prices .price-box {
   -webkit-box-shadow: 3px 3px 10px black;
           box-shadow: 3px 3px 10px black;
-  margin: 20px 10px;
+  margin: 0px 0px 40px 0px;
   background-color: #ffffff;
-  padding: 30px;
+  padding: 30px 0px 20px;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
@@ -566,7 +567,7 @@ header h2 {
 }
 
 #achievements .Apadding {
-  padding: 4rem 0rem 2rem 0rem;
+  padding: 2rem 0rem 2rem 0rem;
 }
 
 #achievements .wrapper {
@@ -602,7 +603,7 @@ header h2 {
 }
 
 #contact .jumbotron {
-  padding: 8rem 0;
+  padding: 6rem 0;
   position: relative;
   background-image: url(./images/bgcontact.jpg);
   background-size: cover;
@@ -616,7 +617,7 @@ header h2 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.65);
-  margin-top: -8rem;
+  margin-top: -6rem;
   z-index: -10;
 }
 
