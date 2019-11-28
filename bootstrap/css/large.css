@@ -5,6 +5,16 @@
   height: 100vh;
 }
 
+#about-hero {
+  background-image: url(./images/aboutheroimg-large.jpg);
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+}
+
 @media screen and (min-width: 1005px) {
   #team .card-body {
     height: 300px;

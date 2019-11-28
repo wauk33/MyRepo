@@ -103,7 +103,7 @@ header
     .hero-btn
         margin-top: -20px
 
-    
+/* ------- HERO IMG ------ */
 
 .hero-img
     position: relative
@@ -155,8 +155,23 @@ header
 .hero-arrow:hover
     color: $bluecolor
     text-decoration: none
+.socialmediahead
+    position: absolute
+    right: 0
+    bottom: 0
+    padding: 15px
+    i
+        display: none
+        font-size: 30px
+        padding: 10px
+        color: #dddddd
+        text-shadow: 2px 3px 1px black
+    i:hover
+        color: $bluecolor
+     
 
-/*             ABOUT             */
+
+/*-------ABOUT----*/
 
 #about
     .wrapper
@@ -179,13 +194,13 @@ header
 .highlight:hover
     color: $bluecolor
 
-/* ABOUT-HERO */
+/* -------ABOUT-HERO----------- */
 #about-hero
     display: flex
     align-items: center
     position: relative
     background-image: url(./images/aboutheroimg-small.jpg)
-    background-size: contain
+    background-size: cover
     background-attachment: fixed
     background-position: center
     width: 100%
@@ -275,7 +290,7 @@ header
         padding: 3rem 0 0 0
     h2
         margin-top: 0px
-        padding-top: 50px
+        padding-top: 30px
 
     .price-box
         box-shadow: 3px 3px 10px black
@@ -301,7 +316,7 @@ header
         font-size: 30px
     .price-foottext
         p   
-            margin-top: 50px
+            margin-top: 15px
             font-size: 18px
 
 /*   TEAM    */
@@ -379,14 +394,18 @@ header
     .jumbotron
         margin-bottom: 0
     .Apadding
-        padding: 2rem 0rem 2rem 0rem
+        padding: 3rem 0rem -3rem 0rem
     .wrapper
+        margin-top: -3rem
+        margin-bottom: -3rem
         width: 90%
         .achievement
-            padding: 20px 0px
+            padding: 20px 0px    
+    h2 
+        margin-top: 2rem
     i
-        font-size: 50px
-        padding: 25px
+        font-size: 45px
+        padding: 0px
         color: $bluecolor
         text-shadow: 1px 1px 1px black
     p 
@@ -401,7 +420,8 @@ header
     .underline
         background-color: #dddddd
     .jumbotron
-        padding: 6rem 0
+        margin-bottom: 0
+        padding: 5rem 0 6.2rem 0
         position: relative
         background-image: url(./images/bgcontact.jpg)
         background-size: cover
@@ -413,7 +433,7 @@ header
         width: 100%
         height: 100%
         background-color: rgba(0, 0, 0, .65)
-        margin-top: -6rem
+        margin-top: -5rem
         z-index: -10
     .contact-us
         color: #ffffff
@@ -430,4 +450,15 @@ header
         a:hover
             color: $bluecolor
             i:hover
-                transform: scale(1.4)
+                transform: scale(1.4) 
+
+
+/* FOOTER */ 
+
+footer
+    color: #fff
+    background-color: #0a0a0a
+    p
+        text-align: center
+        padding: 20px
+        margin-bottom: 0

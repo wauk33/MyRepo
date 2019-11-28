@@ -137,6 +137,7 @@ header h2 {
   }
 }
 
+/* ------- HERO IMG ------ */
 .hero-img {
   position: relative;
   background-image: url(./images/heroimg-small.jpg);
@@ -211,7 +212,26 @@ header h2 {
   text-decoration: none;
 }
 
-/*             ABOUT             */
+.socialmediahead {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 15px;
+}
+
+.socialmediahead i {
+  display: none;
+  font-size: 30px;
+  padding: 10px;
+  color: #dddddd;
+  text-shadow: 2px 3px 1px black;
+}
+
+.socialmediahead i:hover {
+  color: #269feae1;
+}
+
+/*-------ABOUT----*/
 #about .wrapper {
   padding-top: 4rem;
   padding-bottom: 6rem;
@@ -249,7 +269,7 @@ header h2 {
   color: #269feae1;
 }
 
-/* ABOUT-HERO */
+/* -------ABOUT-HERO----------- */
 #about-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,7 +279,7 @@ header h2 {
           align-items: center;
   position: relative;
   background-image: url(./images/aboutheroimg-small.jpg);
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
   background-position: center;
   width: 100%;
@@ -391,7 +411,7 @@ header h2 {
 
 #prices h2 {
   margin-top: 0px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 #prices .price-box {
@@ -436,7 +456,7 @@ header h2 {
 }
 
 #prices .price-foottext p {
-  margin-top: 50px;
+  margin-top: 15px;
   font-size: 18px;
 }
 
@@ -567,10 +587,12 @@ header h2 {
 }
 
 #achievements .Apadding {
-  padding: 2rem 0rem 2rem 0rem;
+  padding: 3rem 0rem -3rem 0rem;
 }
 
 #achievements .wrapper {
+  margin-top: -3rem;
+  margin-bottom: -3rem;
   width: 90%;
 }
 
@@ -578,9 +600,13 @@ header h2 {
   padding: 20px 0px;
 }
 
+#achievements h2 {
+  margin-top: 2rem;
+}
+
 #achievements i {
-  font-size: 50px;
-  padding: 25px;
+  font-size: 45px;
+  padding: 0px;
   color: #269feae1;
   text-shadow: 1px 1px 1px black;
 }
@@ -603,7 +629,8 @@ header h2 {
 }
 
 #contact .jumbotron {
-  padding: 6rem 0;
+  margin-bottom: 0;
+  padding: 5rem 0 6.2rem 0;
   position: relative;
   background-image: url(./images/bgcontact.jpg);
   background-size: cover;
@@ -617,7 +644,7 @@ header h2 {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.65);
-  margin-top: -6rem;
+  margin-top: -5rem;
   z-index: -10;
 }
 
@@ -652,5 +679,17 @@ header h2 {
 #contact .social-media a:hover i:hover {
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
+}
+
+/* FOOTER */
+footer {
+  color: #fff;
+  background-color: #0a0a0a;
+}
+
+footer p {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

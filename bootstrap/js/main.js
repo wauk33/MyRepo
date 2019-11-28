@@ -1,19 +1,35 @@
 document.addEventListener('DOMContentLoaded', function(){
 
 const nav = document.querySelector("nav");
+const navbutton = document.querySelector(".navbar-toggler");
+
+function addNavShadowOnClick(){
+        if ((nav.classList.contains("navbarshadow") === false) && (window.scrollY < 500 && window.scrollY > -1 )) {
+            nav.classList.add("navbarshadow")
+        } else if ((nav.classList.contains("navbarshadow") === true) && (window.scrollY < 500 && window.scrollY > -1 )) {
+            nav.classList.remove("navbarshadow")
+        }}
 
 function addNavShadow(){
-    if (window.scrollY > 400){
+    if (window.scrollY > 500){
         nav.classList.add("navbarshadow")
     }
     else{
         nav.classList.remove("navbarshadow")
     }
 }
-
+navbutton.addEventListener('click', addNavShadowOnClick);
 document.addEventListener('scroll', addNavShadow);
 
     $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("show");
+        if (_opened === true && !clickover.hasClass("navbar-toggler")) {
+            $(".navbar-toggler").click();
+        }
+    });
+
+    $(document).scroll(function (event) {
         var clickover = $(event.target);
         var _opened = $(".navbar-collapse").hasClass("show");
         if (_opened === true && !clickover.hasClass("navbar-toggler")) {

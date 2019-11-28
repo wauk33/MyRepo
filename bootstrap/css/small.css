@@ -40,6 +40,10 @@ header h2 {
 }
 
 #contact .contact-shadow {
-  margin-top: -6rem;
+  margin-top: -5rem;
+}
+
+#home .socialmediahead i {
+  display: inline-block;
 }
 /*# sourceMappingURL=small.css.map */
