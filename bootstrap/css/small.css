@@ -46,4 +46,9 @@ header h2 {
 #home .socialmediahead i {
   display: inline-block;
 }
+
+#team .slick-dots li button::before {
+  font-size: 15px;
+  margin-top: 0px;
+}
 /*# sourceMappingURL=small.css.map */

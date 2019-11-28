@@ -75,7 +75,8 @@ $('.team-slick').slick({
     settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true
+        arrows: true,
+        dots: true
     }
 },
 {
