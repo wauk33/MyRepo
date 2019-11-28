@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  outline: none;
 }
 
 body {
@@ -138,7 +139,7 @@ header h2 {
 
 .hero-img {
   position: relative;
-  background-image: url("./images/heroimg-small.jpg");
+  background-image: url(./images/heroimg-small.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -445,7 +446,7 @@ header h2 {
 
 #team .jumbotron {
   position: relative;
-  background-image: url("./images/team/bg.jpg");
+  background-image: url(./images/bg.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -602,7 +603,7 @@ header h2 {
 #contact .jumbotron {
   padding: 8rem 0;
   position: relative;
-  background-image: url("./images/bgcontact.jpg");
+  background-image: url(./images/bgcontact.jpg);
   background-size: cover;
   background-position: bottom;
   background-attachment: fixed;
