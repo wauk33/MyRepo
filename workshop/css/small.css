@@ -1,0 +1,40 @@
+#navbar .navbar-brand .logo {
+  margin-top: -15px;
+  margin-left: 20px;
+}
+
+#navbar .navbar-brand .logo p {
+  font-size: 28px;
+  margin-top: -5px;
+}
+
+#navbar .navbar-brand .logo span {
+  font-size: 22px;
+}
+
+#home {
+  margin-top: 0px;
+}
+
+#home h1 {
+  margin: 10px;
+  font-size: 25px;
+}
+
+#home h2 {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+#home .home-arrow .textshadow {
+  padding: 5px;
+}
+
+#home .homeinfo p {
+  padding: 10px;
+}
+
+#home .homeinfo .infoheader i {
+  padding: 5px;
+}
+/*# sourceMappingURL=small.css.map */

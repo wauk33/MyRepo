@@ -4,14 +4,14 @@ const nav = document.querySelector("nav");
 const navbutton = document.querySelector(".navbar-toggler");
 
 function addNavShadowOnClick(){
-        if ((nav.classList.contains("navbarshadow") === false) && (window.scrollY < 500 && window.scrollY > -1 )) {
+        if ((nav.classList.contains("navbarshadow") === false) && (window.scrollY < 200 && window.scrollY > -1 )) {
             nav.classList.add("navbarshadow")
-        } else if ((nav.classList.contains("navbarshadow") === true) && (window.scrollY < 500 && window.scrollY > -1 )) {
+        } else if ((nav.classList.contains("navbarshadow") === true) && (window.scrollY < 200 && window.scrollY > -1 )) {
             nav.classList.remove("navbarshadow")
         }}
 
 function addNavShadow(){
-    if (window.scrollY > 500){
+    if (window.scrollY > 200){
         nav.classList.add("navbarshadow")
     }
     else{
