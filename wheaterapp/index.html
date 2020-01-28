@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Pogoda</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  
+<div class="wrapper">
+        <div class="top">
+            <h1>Aplikacja pogodowa</h1>
+            <div class="main-info">
+                <div>
+                    <h3 class="city-name"></h3>
+                    <input type="text" placeholder="Wpisz nazwę miasta..."><button>Szukaj</button>
+                    <p class="warning"></p>
+                </div>
+                <img src="" alt="Obrazek przedstawiający pogodę" class="photo">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="headings">
+                <p>Niebo:</p>
+                <p>Temperatura:</p>
+                <p>Wilgotność:</p>
+            </div>
+            <div class="weather-info">
+                <p class="weather"></p>
+                <p class="temp"></p>
+                <p class="humidity"></p>
+            </div>
+        </div>
+</div>
+</body>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./js/main.js"></script>
+
+
+</html>

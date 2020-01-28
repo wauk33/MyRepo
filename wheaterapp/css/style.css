@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%);   
+    font-size: 15px;
+    animation: anim 4s infinite linear;
+}
+
+@keyframes anim {
+10%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%); 
+    }
+12%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 12%, rgba(0,0,103,1) 100%); 
+}
+13%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 13%, rgba(0,0,103,1) 100%); 
+}
+14%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 14%, rgba(0,0,103,1) 100%); 
+}
+15%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1)15%, rgba(0,0,103,1) 100%); 
+}
+16%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 16%, rgba(0,0,103,1) 100%); 
+}
+17%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 17%, rgba(0,0,103,1) 100%); 
+}
+18%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 18%, rgba(0,0,103,1) 100%); 
+}
+19%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 19%, rgba(0,0,103,1) 100%); 
+}
+20%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 20%, rgba(0,0,103,1) 100%); 
+}
+21%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 21%, rgba(0,0,103,1) 100%); 
+}
+22%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 22%, rgba(0,0,103,1) 100%); 
+}
+23%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 23%, rgba(0,0,103,1) 100%); 
+}
+24%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 24%, rgba(0,0,103,1) 100%); 
+}
+25%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 25%, rgba(0,0,103,1) 100%); 
+}
+26%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 26%, rgba(0,0,103,1) 100%); 
+}
+27%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 27%, rgba(0,0,103,1) 100%); 
+}
+28%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 28%, rgba(0,0,103,1) 100%); 
+}
+50%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 29%, rgba(0,0,103,1) 100%); 
+}
+51%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 28%, rgba(0,0,103,1) 100%); 
+}
+52%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 26%, rgba(0,0,103,1) 100%); 
+}
+53%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 25%, rgba(0,0,103,1) 100%); 
+}
+54%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 24%, rgba(0,0,103,1) 100%); 
+}
+55%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 23%, rgba(0,0,103,1) 100%); 
+}
+56%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 21%, rgba(0,0,103,1) 100%); 
+}
+57%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 20%, rgba(0,0,103,1) 100%); 
+}
+58%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 19%, rgba(0,0,103,1) 100%); 
+}
+59%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 18%, rgba(0,0,103,1) 100%); 
+}
+60%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 17%, rgba(0,0,103,1) 100%); 
+}
+61%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 16%, rgba(0,0,103,1) 100%); 
+}
+62%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 15%, rgba(0,0,103,1) 100%); 
+}
+63%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 14%, rgba(0,0,103,1) 100%); 
+}
+64%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 13%, rgba(0,0,103,1) 100%); 
+}
+65%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 12%, rgba(0,0,103,1) 100%); 
+}
+66%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 11%, rgba(0,0,103,1) 100%); 
+}
+67%{
+    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%); 
+}
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+input {
+    font-size: 16px;
+    padding: 5px 10px;
+    margin-top: 40px;
+    background: none;
+    border: none;
+    color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+input::placeholder {
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    padding: 10px;
+    margin-left: 20px;
+    color: #fff;
+    background-color: rgba(223, 223, 223, 0.238);
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color .3s, color .3s;
+}
+
+button:hover {
+    color: #000;
+    background-color: rgba(223, 223, 223, 0.401);
+}
+
+.wrapper {
+    width: 800px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0);
+}
+
+.top {
+    height: 260px;
+}
+
+.bottom {
+    height: 140px;
+}
+
+.main-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.city-name {
+    font-size: 55px;
+}
+
+.headings,
+.weather-info {
+    display: flex;
+    align-items: center;
+}
+
+.headings p,
+.weather-info p {
+    width: 33.3%;
+    text-align: center;
+}
+
+.headings {
+    height: 35%;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.weather-info {
+    height: 65%;
+    font-size: 26px;
+}
+
+.photo {
+    width: 200px;
+    height: 165px;
+}
+
+.warning {
+    margin-top: 10px;
+    font-size: 14px;
+    color: tomato;
+}
