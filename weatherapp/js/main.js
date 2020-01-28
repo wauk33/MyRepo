@@ -9,7 +9,7 @@ const weather = document.querySelector('.weather');
 const temp = document.querySelector('.temp');
 const humidity = document.querySelector('.humidity');
 
-const apiLink = "http://api.openweathermap.org/data/2.5/weather?q=";
+const apiLink = "https://api.openweathermap.org/data/2.5/weather?q=";
 const apiKey = "&APPID=e167323c23eee5dfa78fe95b29bf631d";
 const units = "&units=metric";
 let url;
