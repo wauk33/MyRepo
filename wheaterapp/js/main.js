@@ -33,30 +33,30 @@ const getWeather = () => {
             input.value = '';
 
             if(status.id >= 200 && status.id <300){
-                photo.setAttribute('src', "../images/thunderstorm.png");weather.textContent = "Burza";
+                photo.setAttribute('src', "./images/thunderstorm.png");weather.textContent = "Burza";
             }
             else if(status.id >= 300 && status.id <500){
-                photo.setAttribute('src', "../images/drizzle.png");
+                photo.setAttribute('src', "./images/drizzle.png");
                 weather.textContent = "Mżawka";
             }
             else if(status.id >= 500 && status.id <600){
-                photo.setAttribute('src', "../images/rain.png");
+                photo.setAttribute('src', "./images/rain.png");
                 weather.textContent = "Opady deszczu";
             }
             else if(status.id >= 600 && status.id <700){
-                photo.setAttribute('src', "../images/ice.png");
+                photo.setAttribute('src', "./images/ice.png");
                 weather.textContent = "Mróz i opady śniegu";
             }
             else if(status.id >= 701 && status.id <800){
-                photo.setAttribute('src', "../images/fog.png");
+                photo.setAttribute('src', "./images/fog.png");
                 weather.textContent = "Mgła";
             }
             else if(status.id === 800){
-                photo.setAttribute('src', "../images/sun.png");
+                photo.setAttribute('src', "./images/sun.png");
                 weather.textContent = "Słonecznie";
             }
             else if(status.id > 800 && status.id <900){
-                photo.setAttribute('src', "../images/cloud.png");
+                photo.setAttribute('src', "./images/cloud.png");
                 weather.textContent = "Zachmurzenie";
             }
             console.log(res)
