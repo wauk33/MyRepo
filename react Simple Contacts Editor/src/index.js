@@ -1,8 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import './main.css';
 
+import Button from '@material-ui/core/Button';
 
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: '#4caf50',
+    },
+    secondary: {
+      main: '#f44336'
+    }
+  }
+}
+);
 const allUsers = ["Michal", "Asia", "Basia", "Kasia", "Stasia", "Marcin", "Aga", "Dalla"];
 
 
@@ -72,6 +86,13 @@ class App extends React.Component {
     }
   }
 
+  listSelector(e){
+    let mouseX = e.clientX;
+    let mouseY = e.clientY;
+    const elementMouseIsOver = document.elementFromPoint(mouseX, mouseY);
+    
+  }
+
   render() {
     
     return(
@@ -81,10 +102,13 @@ class App extends React.Component {
         </div>
         <input type="search" onClick={this.filterUsers.bind(this)} onInput={this.filterUsers.bind(this)}/>
         <div className="menu">
-          <button onClick={this.addUser.bind(this)}>+ dodaj</button>
-          <button onClick={this.remUser.bind(this)}>- usuń</button>
+        <ThemeProvider theme={theme}>
+          <Button onClick={this.addUser.bind(this)} variant="contained" color="primary">dodaj</Button>
+          <Button onClick={this.remUser.bind(this)} variant="contained" color="secondary">usuń</Button>
+          <Button variant="contained" color="">edytuj</Button>
+        </ThemeProvider>
         </div>
-        <UsersList users={this.state.filteredU} />
+        <UsersList users={this.state.filteredU} onClick={this.listSelector} />
       </div>
     );
   }
@@ -100,7 +124,7 @@ const UsersList = ({users}) => {
   );
 }
 return(
-  <p>Brak wyników!</p>);
+  <p className="void">Brak wyników!</p>);
 }
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -1,6 +1,6 @@
 * {
     text-align: center;
-    margin: 0 auto;
+    margin: 0;
 
 }
 .wrapper {
@@ -9,8 +9,10 @@
     background: linear-gradient(90deg, rgba(14,93,26,1) 0%, rgba(187,255,57,1) 67%, rgba(36,238,66,1) 90%);
 }
 #root {
+    padding: 20px 0px 30px 0px;
     width: 250px;
     box-shadow: 0px 0px 20px black;
+    background-color: rgb(68, 68, 68);
 }
 .menu {
     background-color: rgb(68, 68, 68);
@@ -18,30 +20,21 @@
     display: flex;
     padding: 10px 0px 10px 0px;
 }
-.menu > button {
+.menu > Button {
     width: 50px;
-    height: 50px;
     text-transform: uppercase;
-    border-radius: 5px;
-    padding: 5px;
-    border: 0;
-    cursor: pointer;
 }
-
-.menu > button:nth-of-type(1){
-    background-color: rgb(61, 187, 61);
+.menu > Button:nth-of-type(1){
+    margin: 0 auto;
 }
-.menu > button:nth-of-type(2){
-    background-color:rgb(173, 151, 151);
+.menu > Button:nth-of-type(2){
+    margin: 0 auto;
 }
-.menu > button:nth-of-type(1):hover {
-    background-color: rgb(106, 216, 106);
-}
-.menu > button:nth-of-type(2):hover {
-    background-color:rgb(206, 182, 182);
+.menu > Button:nth-of-type(3){
+    margin: 0 auto;
 }
 .header {
-    background-color: rgb(160, 131, 131);
+    background-color: rgb(68, 68, 68);
     height: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 5px;
@@ -64,11 +57,17 @@ ul {
 li {
     list-style: none;
     padding: 10px 0px 10px 0px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Roboto;
     font-size: 17px;
     border-bottom: 1px rgb(195, 195, 195) solid;
-
+    text-align: left;
+    padding-left: 20px;
+    transition: background-color 0.15s;
+    background-color:  rgb(204, 204, 204);
 }
 li:hover {
     background-color:  rgb(195, 195, 195);
+}
+.void {
+background-color: lightgrey;
 }
