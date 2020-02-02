@@ -12,18 +12,31 @@
   font-size: 22px;
 }
 
+#about .jumbotron {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
 #home {
   margin-top: 0px;
 }
 
 #home h1 {
-  margin: 10px;
   font-size: 25px;
 }
 
 #home h2 {
   font-size: 16px;
   margin-bottom: 1rem;
+}
+
+#home .textcon {
+  margin-top: 4rem;
 }
 
 #home .home-arrow .textshadow {
@@ -36,5 +49,18 @@
 
 #home .homeinfo .infoheader i {
   padding: 5px;
+}
+
+#home .home-header h1 {
+  font-size: 40px;
+}
+
+#home .home-header h2 {
+  font-size: 20px;
+}
+
+#contact .maps-wrapper {
+  width: 650px;
+  height: 450px;
 }
 /*# sourceMappingURL=small.css.map */

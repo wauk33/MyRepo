@@ -34,20 +34,20 @@
   margin-bottom: -20px;
 }
 
-#home .home-header {
+#home .hometext {
   width: 100%;
 }
 
-#home .home-header h1 {
+#home .hometext .home-header h1 {
   font-size: 55px;
 }
 
-#home .home-header h2 {
+#home .hometext .home-header h2 {
   font-size: 20px;
   margin-top: -20px;
 }
 
-#home .home-header p {
+#home .hometext p {
   font-size: 18px;
 }
 

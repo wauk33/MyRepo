@@ -2,8 +2,6 @@
 
 $mcolor:  #ffdc13
 
-
-
 html
     scroll-behavior: smooth
     outline: none  
@@ -47,8 +45,7 @@ img
     margin: 0 auto
     width: 70px
     height: 4px
-.navbarshadow
-.scroll-fix
+
 .scroll-fix::before
     content: ""
     height: 5rem
@@ -58,12 +55,6 @@ img
 /* NAVBAR */
 #navbar
     background-color: #131313e0
-    /* .fa-wrench
-        height: 50px
-        font-size: 35px
-        padding: 0px 20px 0px 5px
-        color: #ffffff
-        text-shadow: 2px 2px 5px black */
     a 
         color: #ffffff
 
@@ -74,12 +65,6 @@ img
         .logo 
             height: 60px
             margin-top: -10px
-            // p
-            //     color: $mcolor
-            //     text-transform: uppercase
-            //     font-size: 22px
-            //     margin-top: px
-            //     font-family: 'Josefin Sans', sans-serif
             span
                 text-transform: uppercase
                 font-family: 'Alatsi', sans-serif
@@ -139,11 +124,6 @@ img
         font-size: 22px
         text-transform: uppercase
         margin-bottom: 1rem
-    // h2
-    //     text-transform: uppercase
-    //     font-size: 16px
-    //     margin-bottom: 3rem
-    //     color: $mcolor
     .home-img
         width: 100%
         height: 100vh
@@ -189,8 +169,7 @@ img
             padding: 0 15px
             span 
                 color: $mcolor
-    @media screen and (min-width: 375px)
-        margin-top: 1rem
+    @media screen and (max-width: 375px)
         h1
             font-size: 40px
         h2
@@ -199,8 +178,6 @@ img
         width: 100%
         padding: 10px 0px 0px 0px
         margin-top: 1rem
-        @media screen and (min-width:375px)
-            margin-top: 12rem
     .homeinfo
         width: 100%
         p   
@@ -233,7 +210,7 @@ img
             text-decoration: none
             color: #252525
     opacity: 0.9
-    background-color: #252525
+    background-color: #e0e0e0
     .services-con
         width: 100%
         .list-item
@@ -299,7 +276,7 @@ img
                     transition: width 0.5s linear
                     width: 100px
             .item:nth-of-type(odd)
-                background: gb(255,240,57)
+                background: rgb(255,240,57)
                 background: linear-gradient(0deg, rgba(255,240,57,1) 20%, rgba(255,220,19,1) 80%)
                 h4 
                     font-size: 20px
@@ -347,15 +324,19 @@ img
         z-index: 0
         margin-bottom: -4rem
         .img1
-            height: 500px
-            width: auto
-            border-radius: 0% 2% 2% 0%
+            height: auto
+            width: 100%
             box-shadow: 0px 0px 10px 2px black
+            @media screen and (max-width: 992px)
+                display: none
         .img2
-            height: 500px
-            width: auto
-            border-radius: 2% 0% 0% 2%
+            height: auto
+            width: 100%
             box-shadow: 0px 0px 10px 2px black
+            @media screen and (max-width: 992px)
+                display: none
+      
+
     .jumbo2
         margin-top: -2rem
         p 
@@ -397,7 +378,6 @@ img
     h2
         font-family: 'Alatsi', sans-serif
         width: 100%
-        background-color: #c8c8c8
         text-transform: uppercase
         text-align: center
         padding: 15px 0
@@ -423,14 +403,36 @@ img
         height: 100%
         z-index: -10
     .wrapper
-
+        display: flex
+        flex-flow: row wrap
+        justify-content: space-evenly
+        align-items: center
+        width: 100%
+    .maps-wrapper
+        padding-top: 50px
+        width: 550px
+        height: 450px
+    .contact-text
+        width: 400px
+        font-family: 'Roboto'
+        text-transform: uppercase
+        text-align: center
+        color: whitesmoke
+        padding: 20px 25px 20px 25px
+        background-color: #c7c7c732
+        h2
+            font-size: 25px
+        p   
+            font-size: 18px
 footer
     width: 100%
+    height: 45px
+
     color: #fff
     background-color: #0a0a0a
     p
         text-align: center
-        padding: 20px
+        padding: 10px
         margin-bottom: 0
     a 
         color: $mcolor
