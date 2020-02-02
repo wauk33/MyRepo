@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MyRepo/react_Simple_Contacts_Editor/static/css/main.95877722.chunk.css",
-    "main.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.b394ef02.chunk.js",
-    "main.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.b394ef02.chunk.js.map",
+    "main.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.c27f13c6.chunk.js",
+    "main.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.c27f13c6.chunk.js.map",
     "runtime-main.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/runtime-main.ca480239.js",
     "runtime-main.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/runtime-main.ca480239.js.map",
     "static/js/2.514ee8e1.chunk.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.514ee8e1.chunk.js",
     "static/js/2.514ee8e1.chunk.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.514ee8e1.chunk.js.map",
     "index.html": "/MyRepo/react_Simple_Contacts_Editor/index.html",
-    "precache-manifest.71e313596bf6a54b1c5a9d7ddd609636.js": "/MyRepo/react_Simple_Contacts_Editor/precache-manifest.71e313596bf6a54b1c5a9d7ddd609636.js",
+    "precache-manifest.fb7b68cfd874c0bfbe60a5b866a4a6ce.js": "/MyRepo/react_Simple_Contacts_Editor/precache-manifest.fb7b68cfd874c0bfbe60a5b866a4a6ce.js",
     "service-worker.js": "/MyRepo/react_Simple_Contacts_Editor/service-worker.js",
     "static/css/main.95877722.chunk.css.map": "/MyRepo/react_Simple_Contacts_Editor/static/css/main.95877722.chunk.css.map",
     "static/js/2.514ee8e1.chunk.js.LICENSE": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.514ee8e1.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ca480239.js",
     "static/js/2.514ee8e1.chunk.js",
     "static/css/main.95877722.chunk.css",
-    "static/js/main.b394ef02.chunk.js"
+    "static/js/main.c27f13c6.chunk.js"
   ]
 }
