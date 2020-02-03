@@ -22,88 +22,68 @@ const theme = createMuiTheme({
     },
 });
 
-const allUsers = ["Oliwia", "Asia", "Michał", "Kasia", "Ewelina", "Marcin", "Aga"];
-let input = document.querySelector(".input");
+const allUsers =["Oliwia", "Asia", "Michał", "Kasia", "Ewelina", "Marcin","Aga"]
+const descriptions = ["Friend"];
 
 
 
-class App extends React.Component {
+class AppComponent extends React.Component {
   
   constructor() {
     super();
 
     this.state = {
-      filteredU: allUsers
+      filteredList: allUsers,
+      description: descriptions,
+
     };
   }
 
   filterUsers(event){
     const textInput = event.currentTarget.value;
-    const filteredU =  allUsers.filter(user => user.toLowerCase().includes(textInput.toLowerCase()));
-    this.setState({filteredU})
+    const filteredList =  allUsers.filter(user => user.toLowerCase().includes(textInput.toLowerCase()));
+    this.setState({filteredList})
   }
 
-
-  addUser(){
+  makeUppercase(e){
     let input = document.querySelector("input");
     let textInput = input.value;
+    const makeUpper = textInput.charAt(0).toUpperCase();
+    this.setState({makeUpper});
+  }
 
-    if(textInput !== '' && textInput !== "Aby dodać kontakt wpisz nazwę.." && textInput !== "Aby usunąć kontakt wpisz nazwę.." ){
+  addNewUser(){
+    let input = document.querySelector("input");
+
+    let textInput = input.value;
+    if(textInput !== ''){
     const capitalTextInput = textInput.charAt(0).toUpperCase() + textInput.slice(1);
-    const addNew = allUsers.unshift(capitalTextInput);
+    const addUser = allUsers.unshift(capitalTextInput);
 
-    this.setState({addNew});
-    }
-    else{
-      return(
-        input.style.fontSize = "15px",
-        input.style.color = "darkgrey",
-        input.label = "Aby dodać kontakt wpisz nazwę..",
-        input.addEventListener('click', ()=>{
-          input.label = '';
-          input.style.color = "black";
-          input.style.fontSize = "20px";
-        })
-      );
+    this.setState({addUser});
     }
   }
 
   remUser(){
     let input = document.querySelector("input");
-    let textInput = input.value;
-    
-    if(textInput !== '' && textInput !== "Aby usunąć kontakt wpisz nazwę.." && allUsers.indexOf(textInput) > -1){
-    const findUserIndex = allUsers.indexOf(textInput);
-    const removeUser = allUsers.splice(findUserIndex, 1);
 
+    let textInput = input.value;
+    if(textInput !== ''){
+    const removeUser = allUsers.splice(allUsers.indexOf(textInput), 1);
+      console.log(removeUser)
     this.setState({removeUser});
     }
-    else{
-      return(
-        input.style.fontSize = "15px",
-        input.style.color = "darkgrey",
-        input.label = "Aby usunąć kontakt wpisz nazwę..",
-        input.addEventListener('click', ()=>{
-          input.label = '';
-          input.style.color = "black";
-          input.style.fontSize = "20px";
-        })
-      );
-    }
   }
 
-  listSelector(){
-    let mouseX = document.clientX;
-    let mouseY = document.clientY;
-    let mouseIsOver = document.elementFromPoint(mouseX, mouseY);
-    console.log(mouseIsOver);
-  }
-
+ 
   render() {
+
+
+
     return(
       <div>
         <div className="header">
-          <h1>FindO!</h1>
+          <h1>Findo</h1>
         </div>
         <ThemeProvider theme={theme}>
         <form className="input" noValidate autoComplete="off">
@@ -111,29 +91,55 @@ class App extends React.Component {
         </form>
 
         <div className="menu">
-          <Button onClick={this.addUser.bind(this)} variant="contained" color="primary">dodaj</Button>
+          <Button onClick={this.addNewUser.bind(this)} variant="contained" color="primary">dodaj</Button>
           <Button onClick={this.remUser.bind(this)} variant="contained" color="secondary">usuń</Button>
           <Button variant="contained" color="default">edytuj</Button>
         </div>
         </ThemeProvider>
-        <UsersList users={this.state.filteredU} onClick={this.listSelector} />
+        <UsersList users={this.state.filteredList} descs={this.state.description} />
       </div>
     );
   }
 }
 
+const Avatar = ({users}) => {
+  const avatarurl = "images/avatar.png";
+    return(
+      <img className="avatar" alt="" src={avatarurl}></img>
+    );
+}
 
-const UsersList = ({users}) => {
+const UsersList = ({users, descs}) => {
   if(users.length > 0){
   return(
     <ul>
-    {users.map(user => <li key={user}>{user}</li>)}
-    </ul>
+      {users.map((user, index) =>
+
+      <li key={user}>
+      <Avatar />
+
+      <div>
+        <p className="username">
+        {user}
+        </p>
+    
+        {descs.map((desc) => 
+        <p className="description" key={desc}>
+        {desc}
+        </p>
+ )} 
+      </div>
+
+
+      </li>)}
+    </ul>);
+  }
+else{
+return(
+  <p className="void">Brak wyników!</p>
   );
 }
-return(
-  <p className="void">Brak wyników!</p>);
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<AppComponent />, document.getElementById('root'));
 

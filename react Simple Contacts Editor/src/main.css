@@ -4,13 +4,13 @@
 
 }
 .wrapper {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(90deg, rgba(14,93,26,1) 0%, rgba(187,255,57,1) 67%, rgba(36,238,66,1) 90%);
 }
 #root {
-    padding: 20px 0px 30px 0px;
-    width: 250px;
+    padding: 20px 0px 50px 0px;
+    width: 300px;
     box-shadow: 0px 0px 20px black;
     background-color: rgb(68, 68, 68);
 }
@@ -55,19 +55,36 @@ ul {
     padding: 10px 0px 10px 0px;
 }
 li {
+    display: flex;
     list-style: none;
-    padding: 10px 0px 10px 0px;
+    justify-content: left;
+    align-items: center;
+    padding: 5px 0px 5px 10px;
     font-family: Roboto;
     font-size: 17px;
     border-bottom: 1px rgb(195, 195, 195) solid;
-    text-align: left;
-    padding-left: 20px;
+    text-align: left;;
     transition: background-color 0.15s;
     background-color:  rgb(204, 204, 204);
+    flex: 2;
 }
 li:hover {
     background-color:  rgb(195, 195, 195);
 }
 .void {
 background-color: lightgrey;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+.description {
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    display: flex;
+    justify-content: left;
+    padding-left: 1rem;
+}
+.username {
+    padding-left: 1rem;
 }
