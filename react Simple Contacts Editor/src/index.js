@@ -3,8 +3,10 @@ import ReactDOM from "react-dom";
 import './main.css';
 
 import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+
 
 const theme = createMuiTheme({
   palette: {
@@ -13,11 +15,15 @@ const theme = createMuiTheme({
     },
     secondary: {
       main: '#f44336'
-    }
-  }
-}
-);
-const allUsers = ["Michal", "Asia", "Basia", "Kasia", "Stasia", "Marcin", "Aga", "Dalla"];
+    },
+  },
+  input: {
+      color: 'white',
+    },
+});
+
+const allUsers = ["Oliwia", "Asia", "Michał", "Kasia", "Ewelina", "Marcin", "Aga"];
+let input = document.querySelector(".input");
 
 
 
@@ -52,9 +58,9 @@ class App extends React.Component {
       return(
         input.style.fontSize = "15px",
         input.style.color = "darkgrey",
-        input.value = "Aby dodać kontakt wpisz nazwę..",
+        input.label = "Aby dodać kontakt wpisz nazwę..",
         input.addEventListener('click', ()=>{
-          input.value = '';
+          input.label = '';
           input.style.color = "black";
           input.style.fontSize = "20px";
         })
@@ -76,9 +82,9 @@ class App extends React.Component {
       return(
         input.style.fontSize = "15px",
         input.style.color = "darkgrey",
-        input.value = "Aby usunąć kontakt wpisz nazwę..",
+        input.label = "Aby usunąć kontakt wpisz nazwę..",
         input.addEventListener('click', ()=>{
-          input.value = '';
+          input.label = '';
           input.style.color = "black";
           input.style.fontSize = "20px";
         })
@@ -86,28 +92,31 @@ class App extends React.Component {
     }
   }
 
-  listSelector(e){
-    let mouseX = e.clientX;
-    let mouseY = e.clientY;
-    const elementMouseIsOver = document.elementFromPoint(mouseX, mouseY);
-    
+  listSelector(){
+    let mouseX = document.clientX;
+    let mouseY = document.clientY;
+    let mouseIsOver = document.elementFromPoint(mouseX, mouseY);
+    console.log(mouseIsOver);
   }
 
   render() {
-    
+    this.listSelector();
     return(
       <div>
         <div className="header">
           <h1>FindO!</h1>
         </div>
-        <input type="search" onClick={this.filterUsers.bind(this)} onInput={this.filterUsers.bind(this)}/>
-        <div className="menu">
         <ThemeProvider theme={theme}>
+        <form className="input" noValidate autoComplete="off">
+          <TextField id="filled-basic" label="Wpisz imię" color="primary" variant="standard" onChange={this.filterUsers.bind(this)} />
+        </form>
+
+        <div className="menu">
           <Button onClick={this.addUser.bind(this)} variant="contained" color="primary">dodaj</Button>
           <Button onClick={this.remUser.bind(this)} variant="contained" color="secondary">usuń</Button>
-          <Button variant="contained" color="">edytuj</Button>
-        </ThemeProvider>
+          <Button variant="contained" color="default">edytuj</Button>
         </div>
+        </ThemeProvider>
         <UsersList users={this.state.filteredU} onClick={this.listSelector} />
       </div>
     );
