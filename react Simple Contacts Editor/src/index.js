@@ -100,7 +100,6 @@ class App extends React.Component {
   }
 
   render() {
-    this.listSelector();
     return(
       <div>
         <div className="header">
