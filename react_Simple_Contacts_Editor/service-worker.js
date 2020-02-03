@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/MyRepo/react_Simple_Contacts_Editor/precache-manifest.fb7b68cfd874c0bfbe60a5b866a4a6ce.js"
+  "/MyRepo/react%20Simple%20Contacts%20Editor/precache-manifest.a3024085a8a01b4d3052ed9c2f0ee582.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/MyRepo/react_Simple_Contacts_Editor/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("/MyRepo/react%20Simple%20Contacts%20Editor/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
