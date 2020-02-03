@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "578424e3eb82abf9ae5a9fc921249fd5",
+    "revision": "ef084b5a9594cf72cb393b38274b7f5b",
     "url": "/MyRepo/react_Simple_Contacts_Editor/index.html"
   },
   {
-    "revision": "1fbd35f32d1a30459109",
+    "revision": "d8914c383975cbc8ab52",
     "url": "/MyRepo/react_Simple_Contacts_Editor/static/css/main.95877722.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.62f7ed70.chunk.js.LICENSE"
   },
   {
-    "revision": "1fbd35f32d1a30459109",
-    "url": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.8d5a5c99.chunk.js"
+    "revision": "d8914c383975cbc8ab52",
+    "url": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.de89199c.chunk.js"
   },
   {
     "revision": "01f9c624cce663aa1911",
