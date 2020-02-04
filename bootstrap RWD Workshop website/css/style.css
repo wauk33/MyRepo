@@ -696,7 +696,8 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  aling-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   width: 100%;
 }
 
