@@ -4,9 +4,11 @@ import './main.css';
 
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import purple from '@material-ui/core/colors/purple';
 
 import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
 
+const third = purple.A500;
 
 const theme = createMuiTheme({
   palette: {
@@ -35,7 +37,6 @@ class AppComponent extends React.Component {
     this.state = {
       filteredList: allUsers,
       description: descriptions,
-
     };
   }
 
@@ -74,8 +75,13 @@ class AppComponent extends React.Component {
     this.setState({removeUser});
     }
   }
+  editUser(){
 
- 
+  } 
+
+  selectUser(){
+
+  }
   render() {
 
 
@@ -87,16 +93,16 @@ class AppComponent extends React.Component {
         </div>
         <ThemeProvider theme={theme}>
         <form className="input" noValidate autoComplete="off">
-          <TextField id="filled-basic" label="Wpisz imię" color="primary" variant="standard" onChange={this.filterUsers.bind(this)} />
+          <TextField id="filled-basic" label="Wpisz imię" color="primary" variant="standard" fullWidth="true" onChange={this.filterUsers.bind(this)} />
         </form>
 
         <div className="menu">
           <Button onClick={this.addNewUser.bind(this)} variant="contained" color="primary">dodaj</Button>
           <Button onClick={this.remUser.bind(this)} variant="contained" color="secondary">usuń</Button>
-          <Button variant="contained" color="default">edytuj</Button>
+          <Button onClick={this.editUser.bind(this)} variant="contained" color="default">edytuj</Button>
         </div>
         </ThemeProvider>
-        <UsersList users={this.state.filteredList} descs={this.state.description} />
+        <UsersList onClick={this.selectUser.bind(this)} users={this.state.filteredList} descs={this.state.description} />
       </div>
     );
   }
