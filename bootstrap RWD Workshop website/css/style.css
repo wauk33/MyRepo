@@ -702,9 +702,17 @@ img {
 }
 
 #contact .maps-wrapper {
-  padding-top: 50px;
   width: 550px;
   height: 450px;
+  border: 1px grey solid;
+  -webkit-box-shadow: 0px 0px 15px 2px black;
+          box-shadow: 0px 0px 15px 2px black;
+}
+
+@media screen and (max-width: 1044px) {
+  #contact .maps-wrapper {
+    margin-top: 50px;
+  }
 }
 
 #contact .contact-text {
@@ -713,7 +721,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: whitesmoke;
-  padding: 20px 25px 20px 25px;
+  padding: 40px 25px 25px 25px;
   background-color: #c7c7c732;
 }
 
