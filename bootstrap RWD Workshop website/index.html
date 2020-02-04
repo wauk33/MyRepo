@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- links/icons&fonts -->
+    <script src="https://kit.fontawesome.com/eebbdab8a5.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Passion+One:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alatsi&display=swap&subset=latin-ext" rel="stylesheet">
+<!-- links/slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<!-- links/style -->
+    <link rel="stylesheet" href=".\css\style.css" type="text/css">
+    <link rel="stylesheet" href=".\css\animate.css" type="text/css"/> 
+<!-- links/mediaqueries -->
+    <link media="screen and (min-width: 576px)"  rel="stylesheet" href=".\css\small.css" type="text/css">
+    <link media="screen and (min-width: 768px)"  rel="stylesheet" href=".\css\medium.css" type="text/css">
+    <link media="screen and (min-width: 992px)"  rel="stylesheet" href=".\css\large.css" type="text/css">
+    <link media="screen and (min-width: 1200px)"  rel="stylesheetkontakt" href=".\css\extra.css" type="text/css">
+    <title> Auto Serwis Mechanika Pojazdowa</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <a class="navbar-brand" href=""><div class="logo"><span>Mechanika Pojazdowa</span><img src="css/images/autoserwis.png" alt="">
+    <!-- <p class="">OPEL Auto Serwis</p> -->
+    </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#home">Strona Główna</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#services">Zakres napraw</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#about">O warsztacie</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#contact">Kontakt</a>
+        </li>
+        </ul>
+    </div>
+    <span class="navbar-text d-none d-xl-block">
+            <span class="tel1"> 
+            <i class="fas fa-phone-square-alt"></i> tel: (22) 000-99-39</span>
+    </span>
+</nav>
+<!-- home -->
+<header id="home">
+    <div class="home-img">
+        <div id="toTopBtn"></div>
+        <div class="home-shadow"></div>
+        <div class="hometext">
+        <div class="home-header">
+        <h1 class="os-animation hidden" data-animation="slideInDown" data-delay="">auto serwis</h1>
+        <h2 class="os-animation hidden" data-animation="fadeInLeft" data-delay="0.6s">Nieautoryzowany serwis samochodów osobowych <span><b>wszystkich</b></span> marek</h2>
+        </div>
+        <div class="textcon os-animation hidden" data-animation="fadeIn" data-delay="1.5s">
+        <!-- <br>
+        <h2>naprawy, diagnostyka, geometria</h2> -->
+        <div class="homeinfo">
+            <div class="row">
+            <div class="loc col-6 col-sm-6 col-md-4">    
+                <b class="infoheader"><i class="fas fa-map-marked-alt"></i></b>
+                <br>
+                <p>
+                ul. Jana Kazimierza 61
+                <br>
+                Warszawa Wola
+                <br>
+                00-000</p>
+            </div>
+        <div class="way col-12 col-sm-12 order-3 order-sm-3 col-md-4 order-md-0">
+                <b class="infoheader">
+                Jak dojechać? </b><br>
+                <a class="btn btn-danger" href="#contact"><i class="fas fa-location-arrow"></i> Sprawdź na mapie</a>
+        </div>
+            <div class="hours col-6 col-sm-6 col-md-4">
+                <b class="infoheader"><i class="far fa-clock"></i></b>
+                <br>
+                <p>8:00 - 17:00
+                <br>
+                pon - pt.</p>
+            </div>
+        </div>
+
+        </div>
+        </div>
+        <a class="home-arrow" href="#services"><i class="fas fa-angle-down"></i></a>
+        </div>
+    </div>
+    
+</header>
+<!-- services -->
+<section id="services" class="scroll-fix">
+        <h2><a href="#services">Zakres napraw &nbsp; </a><i class="fas fa-tools"></i></h2>
+
+    <div class="services-con">
+        <div class="row list-item wrapper hidden">
+
+            <div class="col-12 col-sm-6 col-lg-3 order-1 item os-animation" data-animation="fadeIn" data-delay="0.15s">
+            <div class="ht"><h4>Geometria komputerowa</h4>
+            <div class="underline"></div></div>
+            <img class="img1" src="css\images\services\geometria.png" alt="">
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 order-2 item os-animation" data-animation="fadeIn" data-delay="0.3s"> 
+            <div class="ht"><h4>Zawieszenie</h4>
+            <div class="underline"></div></div>
+            <img class="img2" src="css\images\services\zawieszenie.png" alt="">
+              </div>
+            <!-- 3 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-3 order-sm-4 order-lg-3 item os-animation" data-animation="fadeIn" data-delay="0.">
+            <div class="ht"><h4>Układy hamulcowe</h4>
+            <div class="underline"></div></div>
+            <img class="img3" src="css\images\services\hamulce.png" alt="">
+            </div>
+            <!-- 4 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-4 order-sm-3 order-lg-4 item os-animation" data-animation="fadeIn" data-delay="0.3s">
+            <div class="ht"><h4>Pełna diagnostyka</h4>
+            <div class="underline"></div></div>
+            <img class="img4" src="css\images\services\diagnostyka.png" alt="">
+            </div>
+            <!-- 5 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-5 order-lg-6 item os-animation" data-animation="fadeIn" data-delay="0.15s">
+            <div class="ht"><h4>Skrzynie biegów</h4>
+            <div class="underline"></div></div>
+            <img class="img6" src="css\images\services\skrzynia.png" alt="">
+            </div>
+            <!-- 6 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-6 
+            order-lg-5 item os-animation" data-animation="fadeIn" data-delay="0.3s">
+            <div class="ht"><h4>Układy chłodzenia</h4>
+            <div class="underline"></div></div>
+            <img class="img5" src="css\images\services\chlodniczy.png" alt="">
+            </div>
+            <!-- 7 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-7 order-sm-8 item os-animation" data-animation="fadeIn" data-delay="0.15s">
+            <div class="ht"><h4>Oraz inne...</h4>
+                <div class="underline"></div></div>
+                <img class="img8" src="css\images\services\wulkanizacja.png" alt="">
+            </div>
+            <!-- 8 -->
+            <div class="col-12 col-sm-6 col-lg-3 order-8 order-sm-7 item os-animation" data-animation="fadeIn" data-delay="0.3s">
+            <div class="ht"><h4>Silniki</h4>
+                <div class="underline"></div></div>
+                <img class="img7" src="css\images\services\silnik.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about -->
+<section id="about" class="scroll-fix">
+        <h2><a href="#about">O warsztacie &nbsp; <i class="fas fa-warehouse"></i></a></h2>
+    <div class="jumbotron jumbotron-fluid">
+    <div class="jumboshadow"></div>
+    <img src="css/images/awarsztat-bg-small.jpg" class="border border-dark img1" alt="">
+        <div class="wrapper os-animation hidden" data-animation="fadeInRight">
+            <h3>Doświadczenie
+            </h3>
+            <div class="underline"></div>
+            <p>Specjalizujemy się w pogwarancyjnym <b>serwisie samochodów.</b> Naprawiamy samochody marek europejskich, japońskich i koreańskich. Posiadamy <b>wieloletnie doświadczenie</b> w serwisie gwarancyjnym i pogwarancyjnym samochodów osobowych i dostawczych <b>zdobyte podczas wieloletniej pracy</b> w jednym z wiodących serwisów <b>ASO OPEL</b> w Warszawie. Do napraw używamy tylko <b>solidnych części sprawdzonych producentów</b>. Specjalizujemy się w pogwarancyjnym serwisie samochodów. Naprawiamy głównie samochody marek europejskich, japońskich i koreańskich. </p>
+        </div>
+    
+    </div>
+    <div class="jumbotron jumbotron-fluid jumbo2">
+    <div class="jumboshadow"></div>
+    <img src="css/images/warsztat-bg-smalll.jpg" class="border border-dark order-2 img2" alt="">
+        <div class="wrapper order-1 os-animation hidden" data-animation="fadeInLeft">
+            <h3>Profesjonalizm</h3>
+            <div class="underline"></div>
+            <p>Specjalizujemy się w pogwarancyjnym serwisie samochodów. Naprawiamy głównie samochody marek europejskich, japońskich i koreańskich. Posiadamy wieloletnie doświadczenie w serwisie gwarancyjnym i pogwarancyjnym samochodów osobowych i dostawczych zdobyte podczas wieloletniej pracy w jednym z wiodących serwisów ASO OPEL w Warszawie. Do napraw używamy tylko solidnych części sprawdzonych producentów.</p>
+        </div>
+    
+    </div>
+</section>
+<!-- contact -->
+<section id="contact" class="scroll-fix">
+        <h2><a href="#contact">Kontakt &nbsp; <i class="fas fa-search-location"></i></a></h2>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumboshadow"></div>
+        <div class="wrapper">
+            <div class="contact-text">
+                <h2>Telefon:</h2>
+                <p><i class="fas fa-phone-square-alt"> </i> tel: +48 (22) 000-09-59</p>
+                <p><i class="fas fa-phone-square-alt"> </i> tel: +48 (22) 220-09-29</p>
+                <br>
+                <h2>E-mail:</h2>
+                <p>autoserwis@gmail.com</p>
+            </div>
+            <div class="maps-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39095.740480444496!2d20.922982269332252!3d52.234595934755184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb6f8e14ac0f%3A0x1add992cf12ebb89!2sWola%2C%2000-001%20Warszawa!5e0!3m2!1spl!2spl!4v1580666502766!5m2!1spl!2spl" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<!-- footer -->
+<footer>
+<p>&copy; 2020 <a href="">Auto Serwis</a>.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="slick/slick.min.js"></script>
+
+<script src="js\jquery.waypoints.min"></script>
+<script src="js\animation.js"></script>
+<script src="js\main.js"></script>
+
+</html>
