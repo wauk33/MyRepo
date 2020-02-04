@@ -721,6 +721,7 @@ img {
 #contact .contact-text h2 {
   font-size: 25px;
   color: #ffdc13;
+  line-height: 0.5rem;
 }
 
 #contact .contact-text p {
