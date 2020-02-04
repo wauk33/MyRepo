@@ -1,6 +1,6 @@
 #navbar .navbar-brand .logo {
   margin-top: -15px;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 #navbar .navbar-brand .logo p {
@@ -8,8 +8,13 @@
   margin-top: -5px;
 }
 
+#navbar .navbar-brand .logo img {
+  width: 275px;
+}
+
 #navbar .navbar-brand .logo span {
-  font-size: 22px;
+  font-size: 21px;
+  margin-top: 5px;
 }
 
 #about .jumbotron {
