@@ -1,0 +1,28 @@
+#navbar .navbar-brand .logo {
+  margin-top: -20px;
+  margin-left: 10px;
+}
+
+#navbar .navbar-brand .logo p {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#navbar .navbar-brand .logo span {
+  margin-top: 10px;
+  font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar #navbarText {
+  margin-top: 0;
+}
+/*# sourceMappingURL=large.css.map */
