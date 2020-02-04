@@ -103,7 +103,7 @@ img {
   letter-spacing: 1px;
   color: #ffffff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,7 +116,7 @@ img {
 }
 
 #navbar .navbar-brand .logo img {
-  width: 300px;
+  width: 250px;
   margin-top: 0;
 }
 
@@ -173,7 +173,7 @@ img {
 }
 
 #navbar .nav-item {
-  padding: 0 5px;
+  padding: 0px 5px;
 }
 
 #navbar .fa-bars {
@@ -298,17 +298,25 @@ img {
   font-size: 25px;
 }
 
+#home .row {
+  margin-left: 10px;
+}
+
 #home .loc {
-  padding: 10px 0 5px 0;
+  padding: 10px 0px 5px 0rem;
 }
 
 #home .hours {
-  padding: 0 0 5px 0;
-  margin-top: 10px;
+  margin-top: 15px;
+}
+
+#home .hours p {
+  padding-top: 10px;
 }
 
 #home .way {
-  padding: 0 0 30px 0;
+  padding: 10px 0 30px 0px;
+  margin-left: -10px;
 }
 
 #home .way button {
