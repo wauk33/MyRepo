@@ -3,7 +3,7 @@
 ## General info
 One of my first projects created with HTML and CSS only. Idea and style are designed by myself.
 ## Setup
-Here's link to the demo: https://wauk33.github.io/MyRepo/old%CSS%20website
+Here's link to the demo: https://wauk33.github.io/MyRepo/old%20CSS%20website
 > Hosted on GitHub Pages
 
 ## Features
