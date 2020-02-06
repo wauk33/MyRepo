@@ -5,7 +5,7 @@
 This app is the one of projects created during learning Java Script. Application is using API of OpenWeatherMap.com, getting data and translate for Polish language.
 
 ## Setup
-Here's link to the demo: https://wauk33.github.io/MyRepo/%20JS%20API%20Simple%20WeatherApp 
+Here's link to the demo: https://wauk33.github.io/MyRepo/JS%20API%20Simple%20WeatherApp 
 > Hosted on GitHub Pages
 
 ## Features
