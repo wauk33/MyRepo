@@ -1,5 +1,5 @@
 # Contacts Editor project
-> Contacts editor with add, delete, select and edit functionalities created with React.js and Material UI.
+> Contacts editor with add, delete, select and edit functionalities. Created with React.js and Material UI.
 
 ## General info
 This project is one of my first with use of React framework. I'm learning fundametals of React and gradually add new functions.
