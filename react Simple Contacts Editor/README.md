@@ -1,4 +1,4 @@
-# React learning - Contacts Editor project
+# Contacts Editor project
 > Contacts editor with add, delete, select and edit functionalities created with React.js and Material UI.
 
 ## General info
