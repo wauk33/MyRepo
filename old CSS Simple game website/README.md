@@ -1,5 +1,5 @@
 # Game's website
-> This website was written some time ago when I was learning HTML and CSS, it has some __outdated__ code, long time of loading and can be disputed.
+> This website was written some time ago when I was learning HTML and CSS, it has __outdated__ code, and things made improperly like long time of loading and bad responsivness.
 ## General info
 One of my first projects created with HTML, CSS and a little JS. Idea and style are designed by myself.
 ## Setup
