@@ -5,7 +5,8 @@
 The motivation and goal for this project was to expand knowledge of Bootstrap, usage of JS libraries and CSS preprocessors. This site was one of my first projects realized with this technologies.
 
 ## Setup
-Here's link to the website: 
+Here's link to the demo: https://wauk33.github.io/MyRepo/bootstrap%20RWD%20Gaming%20website/
+> Hosted on GitHub Pages
 
 ## Features
 
