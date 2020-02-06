@@ -10,6 +10,6 @@ Here's link to the demo: https://wauk33.github.io/MyRepo/old%20CSS%20website
 * Site is responsive
 
 ## Status
-Project is: _not developed_
+Project is: _partly finished_, _not developed_
 
 
