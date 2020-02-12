@@ -709,12 +709,8 @@ img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-<<<<<<< HEAD
-  aling-self: center;
-=======
   -ms-flex-item-align: center;
       align-self: center;
->>>>>>> fd225a4813f7b0cdf594d2354b05ac1fb059844e
   width: 100%;
 }
 
@@ -752,11 +748,7 @@ img {
 }
 
 #contact .contact-text h2 {
-<<<<<<< HEAD
-  font-size: 25px;
-=======
   font-size: 22px;
->>>>>>> fd225a4813f7b0cdf594d2354b05ac1fb059844e
   color: #ffdc13;
   line-height: 0.5rem;
 }
