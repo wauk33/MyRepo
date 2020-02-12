@@ -2,7 +2,7 @@
 > Simple website template created with Bootstrap, SASS, HTML and JavaScript.
 
 ## General info
-The motivation for this project was to create a site for the one of car workshops in my city and consolidation of my skills in using developing tools.
+The motivation for this project was create a website for the one of car workshops in my city and consolidation of my skills in using developing tools.
 Look of the site was made and designed by myself. I used tools for graphic edition(raster and vector) and fonts, icons, images found in web.
 
 ## Setup
