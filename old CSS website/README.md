@@ -1,5 +1,5 @@
 # Simple website
-> This website was written some time ago when I was learning HTML and CSS, it has some __outdated__ code and can be disputed.
+> This website was written some time ago when I was learning HTML and CSS, it has some __outdated__ code and things made improperly like long time of loading, inaccurate responsivness, etc.
 ## General info
 One of my first projects created with HTML and CSS only. Idea and style are designed by myself.
 ## Setup

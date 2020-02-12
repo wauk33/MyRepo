@@ -20,5 +20,5 @@ To-do list:
 Project is: _in progress_, 
 
 ## Inspiration
-Project is made by myself, inspired by author of online courses on Udemy.com
+Project is made by myself, inspired by author of online courses.
 
