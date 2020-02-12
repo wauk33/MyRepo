@@ -4,7 +4,6 @@
 
 }
 .wrapper {
-    display: flex;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(90deg, rgba(14,93,26,1) 0%, rgba(187,255,57,1) 67%, rgba(36,238,66,1) 90%);
@@ -64,15 +63,16 @@ li {
     font-family: Roboto;
     font-size: 17px;
     border-bottom: 1px rgb(195, 195, 195) solid;
-    text-align: left;
+    text-align: left;;
     transition: background-color 0.15s;
     background-color:  rgb(204, 204, 204);
+    flex: 2;
 }
 li:hover {
     background-color:  rgb(195, 195, 195);
 }
 .void {
-    background-color: lightgrey;
+background-color: lightgrey;
 }
 .avatar {
     width: 50px;
@@ -87,76 +87,4 @@ li:hover {
 }
 .username {
     padding-left: 1rem;
-}
-
-#listcontainer {
-    margin-left: 50px;
-    padding: 20px 0px 50px 0px;
-    width: 300px;
-    box-shadow: 0px 0px 20px black;
-    background-color: rgb(68, 68, 68);
-}
-
-.react-list-select {
-	display: block;
-	position: absolute;
-    outline: none;
-}
-
-.react-list-select--item {
-	padding: 0.3em 0.6em;
-	cursor: pointer;
-	position: relative;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-}
-
-.react-list-select--item.is-selected {
-	-webkit-user-select: inherit;
-	-moz-user-select: inherit;
-	-ms-user-select: inherit;
-	-o-user-select: inherit;
-	user-select: inherit;
-}
-
-.react-list-select--item.is-disabled {
-	cursor: default;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-/* Add some style to the list */
-
-.react-list-select {
-	background: #fafafa;
-	border: 1px solid #cacaca;
-	margin-right: 0.5em;
-}
-.react-list-select--item.is-selected {
-	background: #d7e7ff;
-}
-.react-list-select:focus .react-list-select--item.is-focused::before,
-.react-list-select:focus .react-list-select--item.is-focused::after {
-	content: '';
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 2px;
-	background: #79b9ff;
-}
-.react-list-select:focus .react-list-select--item.is-focused::before {
-	left: 0;
-}
-.react-list-select:focus .react-list-select--item.is-focused::after {
-	right: 0;
-}
-.react-list-select--item.is-disabled {
-	color: #afafaf;
 }
