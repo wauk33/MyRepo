@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/MyRepo/react_Simple_Contacts_Editor/static/css/main.841f58e0.chunk.css",
+    "main.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.843a59c3.chunk.js",
+    "main.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/main.843a59c3.chunk.js.map",
+    "runtime-main.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/runtime-main.ca480239.js",
+    "runtime-main.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/runtime-main.ca480239.js.map",
+    "static/js/2.ff643e6f.chunk.js": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.ff643e6f.chunk.js",
+    "static/js/2.ff643e6f.chunk.js.map": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.ff643e6f.chunk.js.map",
+    "index.html": "/MyRepo/react_Simple_Contacts_Editor/index.html",
+    "precache-manifest.c2a92a0101746fb71bfcc221a40aee7a.js": "/MyRepo/react_Simple_Contacts_Editor/precache-manifest.c2a92a0101746fb71bfcc221a40aee7a.js",
+    "service-worker.js": "/MyRepo/react_Simple_Contacts_Editor/service-worker.js",
+    "static/css/main.841f58e0.chunk.css.map": "/MyRepo/react_Simple_Contacts_Editor/static/css/main.841f58e0.chunk.css.map",
+    "static/js/2.ff643e6f.chunk.js.LICENSE": "/MyRepo/react_Simple_Contacts_Editor/static/js/2.ff643e6f.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ca480239.js",
+    "static/js/2.ff643e6f.chunk.js",
+    "static/css/main.841f58e0.chunk.css",
+    "static/js/main.843a59c3.chunk.js"
+  ]
+}
