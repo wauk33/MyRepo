@@ -1,0 +1,49 @@
+#navbar {
+  margin-top: 0px;
+}
+
+#navbar .navbar-brand .logo {
+  margin-top: -20px;
+  margin-left: 15px;
+}
+
+#navbar .navbar-brand .logo p {
+  font-size: 30px;
+  margin-top: -10px;
+}
+
+#navbar .navbar-brand .logo span {
+  margin-top: 10px;
+  font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home h1 {
+  margin-bottom: 2rem;
+}
+
+#home .textcon {
+  width: 90%;
+}
+
+#home .way {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=medium.css.map */
