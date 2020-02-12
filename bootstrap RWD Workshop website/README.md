@@ -18,6 +18,8 @@ Here's link to the demo: https://wauk33.github.io/MyRepo/bootstrap%20RWD%20Works
 To-do list:
 * Add image sliders and update images
 * Set displaying for vertical viewport
+* Update articles with real text
+* Expand services section with choose, display and display off anothers
 
 ## Status
 Project is: _in progress_
