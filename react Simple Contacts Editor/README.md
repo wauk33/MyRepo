@@ -22,4 +22,4 @@ To-do list:
 * Add new functionalities
 
 ## Status
-Project is: _current work_, _in progress_, 
+Project is: _current_, _in progress_, 
