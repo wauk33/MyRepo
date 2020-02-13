@@ -1,9 +1,9 @@
 # Car services's website - template
-> Simple website template created with Bootstrap, SASS, HTML and JavaScript.
+> Simple website created with Bootstrap, SASS, HTML and JavaScript.
 
 ## General info
 The motivation for this project was create a website for the one of car workshops in my city and consolidation of my skills in using developing tools.
-Look of the site was made and designed by myself. I used tools for graphic edition(raster and vector) and fonts, icons, images found in web.
+Look of the site was made and designed by myself. I used tools for graphic edition, linked fonts, icons and images found in web.
 
 ## Setup
 Here's link to the demo: https://wauk33.github.io/MyRepo/bootstrap%20RWD%20Workshop%20website/
