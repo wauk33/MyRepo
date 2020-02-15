@@ -17,7 +17,7 @@ To-do list:
 * Repair issues of improper displaying background images on various mobile devices
 
 ## Status
-Project is: _in progress_, 
+Project is: _partly finished_, 
 
 ## Inspiration
 Project is made by myself, inspired by author of online courses.
