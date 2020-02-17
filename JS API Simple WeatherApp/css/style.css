@@ -14,7 +14,7 @@ body {
     color: rgb(255, 255, 255);
     background: rgb(123, 11, 138);
     font-size: 15px;
-    background-image: url('/images/bcg.jpg');
+    background-image: url('../images/bcg.jpg');
     background-repeat: no-repeat;
     background-size: 100vw;
 }
