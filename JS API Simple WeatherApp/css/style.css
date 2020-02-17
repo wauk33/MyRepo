@@ -7,6 +7,7 @@
 canvas { margin-right: 300px; position: fixed; touch-action: none; z-index: -1;}
 
 body {
+    user-select: none;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -120,7 +121,7 @@ button:hover {
     margin-top: 10px;
     font-size: 14px;
     padding: 10px;
-    color: rgb(226, 0, 0);
+    color: rgb(243, 0, 0);
 }
 .weather-info {
     display: flex;
