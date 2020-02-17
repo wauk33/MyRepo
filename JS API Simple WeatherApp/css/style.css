@@ -4,127 +4,19 @@
     padding: 0;
 }
 
+canvas { margin-right: 300px; position: fixed; touch-action: none; z-index: -1;}
+
 body {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    height: 100vh;
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%);   
+    background: rgb(123, 11, 138);
     font-size: 15px;
-    animation: anim 4s infinite linear;
-}
-
-@keyframes anim {
-10%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%); 
-    }
-12%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 12%, rgba(0,0,103,1) 100%); 
-}
-13%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 13%, rgba(0,0,103,1) 100%); 
-}
-14%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 14%, rgba(0,0,103,1) 100%); 
-}
-15%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1)15%, rgba(0,0,103,1) 100%); 
-}
-16%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 16%, rgba(0,0,103,1) 100%); 
-}
-17%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 17%, rgba(0,0,103,1) 100%); 
-}
-18%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 18%, rgba(0,0,103,1) 100%); 
-}
-19%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 19%, rgba(0,0,103,1) 100%); 
-}
-20%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 20%, rgba(0,0,103,1) 100%); 
-}
-21%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 21%, rgba(0,0,103,1) 100%); 
-}
-22%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 22%, rgba(0,0,103,1) 100%); 
-}
-23%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 23%, rgba(0,0,103,1) 100%); 
-}
-24%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 24%, rgba(0,0,103,1) 100%); 
-}
-25%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 25%, rgba(0,0,103,1) 100%); 
-}
-26%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 26%, rgba(0,0,103,1) 100%); 
-}
-27%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 27%, rgba(0,0,103,1) 100%); 
-}
-28%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 28%, rgba(0,0,103,1) 100%); 
-}
-50%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 29%, rgba(0,0,103,1) 100%); 
-}
-51%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 28%, rgba(0,0,103,1) 100%); 
-}
-52%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 26%, rgba(0,0,103,1) 100%); 
-}
-53%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 25%, rgba(0,0,103,1) 100%); 
-}
-54%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 24%, rgba(0,0,103,1) 100%); 
-}
-55%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 23%, rgba(0,0,103,1) 100%); 
-}
-56%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 21%, rgba(0,0,103,1) 100%); 
-}
-57%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 20%, rgba(0,0,103,1) 100%); 
-}
-58%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 19%, rgba(0,0,103,1) 100%); 
-}
-59%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 18%, rgba(0,0,103,1) 100%); 
-}
-60%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 17%, rgba(0,0,103,1) 100%); 
-}
-61%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 16%, rgba(0,0,103,1) 100%); 
-}
-62%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 15%, rgba(0,0,103,1) 100%); 
-}
-63%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 14%, rgba(0,0,103,1) 100%); 
-}
-64%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 13%, rgba(0,0,103,1) 100%); 
-}
-65%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 12%, rgba(0,0,103,1) 100%); 
-}
-66%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 11%, rgba(0,0,103,1) 100%); 
-}
-67%{
-    background: linear-gradient(90deg, rgba(0,61,80,1) 0%, rgba(36,183,238,1) 10%, rgba(0,0,103,1) 100%); 
-}
+    background-image: url('/images/bcg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100vw;
 }
 
 h1 {
@@ -132,11 +24,27 @@ h1 {
     text-align: center;
     padding: 10px;
 }
-
+.input {
+    margin-top: 18px;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 10px 25px 5px 25px;
+    border-radius: 5px;
+}
+.searchCaption {
+    margin-left: -40px;
+    border-radius: 5px;
+    padding-top: 10px;
+    margin-top: -100px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.363);
+    font-size: 20px;
+    height: 50px;
+    color: rgba(230, 230, 230, 0.945);
+    font-family: 'Montserrat', sans-serif;
+}
 input {
-    font-size: 16px;
+    font-size: 26px;
     padding: 5px 10px;
-    margin-top: 40px;
     background: none;
     border: none;
     color: #fff;
@@ -166,20 +74,14 @@ button:hover {
 }
 
 .wrapper {
-    width: 800px;
-    height: 400px;
-    background-color: rgba(0, 0, 0, 0.85);
-    border: 2px solid white;
-    border-radius: 25px;
-    box-shadow: 0px 0px 20px 3px rgba(0, 0, 0);
+    width: 700px;
+    height: 500px;
+    margin-left: 200px;
+
 }
 
 .top {
-    height: 260px;
-}
-
-.bottom {
-    height: 140px;
+    height: 150px;
 }
 
 .main-info {
@@ -189,42 +91,77 @@ button:hover {
     height: 200px;
 }
 
-.city-name {
-    font-size: 55px;
-}
-
-.headings,
-.weather-info {
+.cityname {
+    margin-top: 30px;
     display: flex;
-    align-items: center;
+    margin-left: -150px;
+    font-size: 65px;
+    
 }
-
-.headings p,
-.weather-info p {
-    width: 33.3%;
-    text-align: center;
+.cityname i {
+    padding-top: 10px;
+    padding-right: 30px;
 }
-
-.headings {
-    height: 35%;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-}
-
-.weather-info {
-    height: 65%;
-    font-size: 26px;
-}
-
 .photo {
-    width: 200px;
-    height: 165px;
+    margin-right: 600px;
+    margin-bottom: -200px;
+    width: 450px;
+    height: 350px;
+    padding: 10px;
+    animation: anim 2s infinite linear;
 }
-
+@keyframes anim {
+    0% {margin-top: 10px;}
+    25%{margin-top: 0px;}
+    50%{margin-top: -10px;}
+    75%{margin-top: 0px;}
+    100%{margin-top: 10px;}
+  }
 .warning {
     margin-top: 10px;
     font-size: 14px;
-    color: tomato;
+    padding: 10px;
+    color: rgb(226, 0, 0);
+}
+.weather-info {
+    display: flex;
+    width: 700px;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 600px;
+}
+.container {
+    margin-top: 250px;
+    margin-left: -150px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-size: 20px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.513);
+    border-radius: 10%;
+}
+.container p {
+    text-align: center;
+}
+.container h3 {
+    margin-top:
+}
+
+#temp {
+}
+#temp p {
+    font-size: 28px;
+}
+#hum {
+}
+#hum p {
+    font-size: 28px;
+}
+
+#weather  p{
+    
 }

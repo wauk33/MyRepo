@@ -3,37 +3,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Pogoda</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  
 <div class="wrapper">
         <div class="top">
-            <h1>Aplikacja pogodowa</h1>
             <div class="main-info">
-                <div>
-                    <h3 class="city-name"></h3>
-                    <input type="text" placeholder="Wpisz nazwę miasta..."><button>Szukaj</button>
-                    <p class="warning"></p>
-                </div>
                 <img src="" alt="Obrazek przedstawiający pogodę" class="photo">
             </div>
         </div>
-        <div class="bottom">
-            <div class="headings">
-                <p>Niebo:</p>
-                <p>Temperatura:</p>
-                <p>Wilgotność:</p>
-            </div>
             <div class="weather-info">
+                <div class="container" id="weather">
+                <h3>Pogoda:</h3>
                 <p class="weather"></p>
+                </div>
+                <div class="container" id="temp">
+                <h3>Temperatura:</h3>
                 <p class="temp"></p>
+                </div>
+                <div class="container" id="hum">
+                <h3>Wilgotność:</h3>
                 <p class="humidity"></p>
+                </div>
             </div>
+        <div class="cityname">
+        <i class="fas fa-map-marker-alt"></i>
+         <h3 class="city-name"></h3>
         </div>
 </div>
+<div class="searchCaption">
+<h3>Wpisz nazwę miasta:</h3>
+<div class="input">
+    <input type="text" placeholder=""><button>Szukaj</button>
+</input>
+    <p class="warning"></p>
+</div>
+</div>
 </body>
-
+<script src="https://kit.fontawesome.com/eebbdab8a5.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="js/main.js"></script>
 
