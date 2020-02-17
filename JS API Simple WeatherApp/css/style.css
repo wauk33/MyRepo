@@ -13,7 +13,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: rgb(255, 255, 255);
     font-size: 15px;
-    background-image: url('./images/bcg.jpg');
+    background-image: url("../images/background.png");
     background-repeat: no-repeat;
     background-size: 100vw;
 }
@@ -91,7 +91,7 @@ button:hover {
 }
 
 .cityname {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     margin-left: -150px;
     font-size: 65px;
