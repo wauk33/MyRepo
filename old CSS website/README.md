@@ -8,7 +8,7 @@ Here's link to the demo: https://wauk33.github.io/MyRepo/old%20CSS%20website
 
 ## Features
 * Site is responsive
-
+* Using Flexbox
 ## Status
 Project is: _partly finished_, _not developed_
 
