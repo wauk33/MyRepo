@@ -1,5 +1,5 @@
 # Weather application
-> Simple application created with API and pure Java Script.
+> Simple application created with use of API and Java Script.
 
 ## General info
 This is the one of projects created during learning Java Script. Application is using Axios and API of OpenWeatherMap.com. It get data and translate it in Polish language.
