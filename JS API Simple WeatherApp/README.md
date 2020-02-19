@@ -14,6 +14,10 @@ Here's link to the demo: https://wauk33.github.io/MyRepo/JS%20API%20Simple%20Wea
 * Simple use of fetching data
 * Translating results
 
+To-do:
+
+* Implement responsivness
+
 ## Status
 Project is: _in progress_
 
