@@ -14,6 +14,7 @@ Here's link to the demo: https://wauk33.github.io/MyRepo/bootstrap%20RWD%20Works
 * Created with new technologies
 * Responsive Web Design
 * Own visual design 
+* Google Lighthouse high audit result
 
 To-do list:
 * Add image sliders and update images
