@@ -1,0 +1,577 @@
+@import "reset.sass"
+
+$maincolor: #f9f9f9
+$secondarycolor: rgb(236, 141, 32)
+$secondarycolorAlpha: rgba(255, 136, 0, 0.89)
+$textcolor:  rgb(41, 41, 41)
+$textcolorlight: #f9f9f9ea
+$bluecolor: #0054da
+
+body 
+    position: relative
+    font-family: 'Roboto', sans-serif
+.hidden
+    display: none
+.scroll-fix
+    margin-top: -55px
+    padding-top: 55px
+#navbar
+    user-select: none
+    height: 55px
+    .navbar-nav
+        align-items: center
+        a 
+            color: #202020e5
+            text-transform:
+            i
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 20px
+                color: #4062d1
+        a:hover 
+            color: $bluecolor
+        .nav-brand
+            margin-top: 10px
+            height: 200px
+            width: 275px
+            background-color: $maincolor
+            border-radius: 50%
+            img
+                width: 200px
+                height: auto
+                margin-top: 20px
+                margin-left: 32px
+
+        .nav-item
+            padding: 0px 25px 0px 25px
+        .nav-brand-hide
+            display: none !important
+
+header
+    user-select: none
+    .home-img
+        height: 100%
+        position: relative
+    .home-shadow
+        width: 100%
+        height: 100%
+        box-shadow: 0px 0px 40px 2px inset rgba(255, 255, 255, 0.103)
+        z-index: 2
+        position: absolute
+    .carousel-item
+        width: 100%
+        height: 100vh
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    .home-wall
+        overflow: hidden
+        display: flex
+        justify-content: center
+        align-items: flex-start
+        flex-flow: column nowrap
+        position: absolute
+        z-index: 25
+        width: 100%
+        height: 100vh
+    .home-socialmedia
+        display: flex
+        justify-content: center
+        align-items: center
+        align-self: flex-end
+        flex-flow: column nowrap
+        flex: 4
+        position: absolute
+        width: 60px
+        height: 60px
+        background-color: #2327fa96
+        font-size: 32px
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+        margin-top: -25rem
+        transition: width 0.2s
+        i
+            color: $maincolor
+    .home-socialmedia:hover
+        width: 70px
+        background-color: #2024ffb4
+
+  
+    .home-container-header
+        margin-top: 500px
+        h1
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-flow: column nowrap
+            width: 100%
+            height: 70px
+            background-color: rgba(255, 188, 30, 0.87)
+            font-weight: bold
+            margin-left: 6rem
+            font-size: 45px
+            color: $maincolor
+
+    .home-container-para
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 45px
+        margin-left: 425px
+        transition: all 0.2s
+        margin-top: 10px
+        a
+            text-decoration: none
+        p
+            color: $maincolor
+            font-size: 20px
+            padding: 5px 15px 5px 15px
+            background-color: $secondarycolorAlpha
+            b
+                font-size: 24px
+    .home-container-para:hover
+        transition: all 0.3s
+        transform: scale(1.05)
+
+
+// OFERTA OFERTA OFERTA OFERTA OFERTA
+.oferta
+    width: 100%
+    position: relative
+    .oferta-wall
+        width: 100%
+        height: 100%
+        background-image: url(./images/oferta-wall.jpg)
+        background-size: cover
+        background-attachment: fixed
+        background-position: bottom
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+        overflow: hidden
+        .oferta-head
+            user-select: none
+            width: 100%
+            height: 430px
+            background-color: #ffffffb9
+            z-index: 100
+            display: flex
+            align-items: center
+            flex-flow: column nowrap
+            a
+                text-decoration: none
+                .oferta-header
+                    width: 100vw
+                    height: 170px
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    text-align: center
+                    color: #000000
+                    font-family: "Montserrat"
+                    font-size: 40px
+                    font-weight: bold
+            .oferta-head-container
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-flow: row nowrap
+                margin-top: -2rem
+            .oferta-head-hero
+                width: 100%
+                height: auto
+                margin-top: -4rem
+                img
+                    width: 600px
+            .oferta-head-hero:hover
+                animation: in linear 2s infinite
+                @keyframes in
+                    0% 
+                        transform: scale(1.00)
+                    50%
+                        transform: scale(1.05)
+                    100%
+                        transform: scale(1.00)
+
+            .oferta-paragraph-left
+                display: flex
+                justify-content: center
+                align-items: center
+                padding: 0px 100px 0px 0px
+                width: 100%
+                color: $textcolor
+                font-size: 18px
+                font-family: "Montserrat", sans-serif
+            .oferta-paragraph-center
+                width: 90%
+                text-align: center
+                font-size: 20px
+                color: $maincolor
+                font-weight: bold
+
+    .oferta-shadow    
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, 0.288)
+        z-index: 0
+        position: absolute
+        margin-top: -55px
+    .oferta-heading
+        width: 100%
+        height: 250px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-family: "Bilbo Swash Caps", cursiva
+        font-size: 90px
+        z-index: 50
+        text-shadow: 2px 2px black
+        a
+            text-decoration: none
+            color: $maincolor
+            font-weight: bold
+
+    .jumbotron
+        margin-bottom: 2rem
+        z-index: 50
+        .h1-left
+            margin-top: -50px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-left: -200px
+            font-size: 35px
+            height: 65px
+            width: 80%
+            color: #ffffff
+            background-color: #ff9101c2
+            border-top-right-radius: 15px
+            font-family: 'Montserrat'
+
+        .h1-right
+            margin-top: -95px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-left: 250px
+            font-size: 35px
+            width: 100%
+            height: 65px
+            color: #ffffff
+            background-color: #004cff9a
+            border-top-left-radius: 15px
+            font-family: 'Montserrat'
+        .h1-center
+            margin-top: -95px
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-left: 50px
+            font-size: 35px
+            height: 65px
+            width: 80%
+            color: #ffffff
+            background-color: #bda640ec
+            border-top-right-radius: 15px
+            border-top-left-radius: 15px
+            font-family: 'Montserrat'
+    .container
+        max-width: 100vw
+        width: 90%
+    .background
+        display: flex
+        align-items: center
+        width: 100%
+        height: 400px
+        background-color: $textcolorlight
+        border-top-right-radius: 10px
+        border-bottom-right-radius: 10px
+        box-shadow: 0px 0px 25px #000000ad
+        .para   
+            width: 50%
+            text-align: left
+            padding: 40px
+    .bigger
+        width: 100%
+        // height: 600px
+        align-items: start
+        border-bottom-left-radius: 10px
+    .carousel
+        width: 650px
+    .carousel-item
+        width: 100%
+        height: 400px
+        p
+            font-size: 15px
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 40px
+            color: $maincolor
+            background-color: #0c090973
+        img 
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    .carousel-caption
+        bottom: -10px
+    .carousel-indicators
+        bottom: -10px
+
+
+#galeria
+    .galeria-jumbotron
+        justify-content: center
+        align-items: center
+        z-index: 1000
+        margin-bottom: -2rem
+        .galeria-header
+            margin-top: -20px
+            h1
+                height: 100px
+                text-align: center
+                font-family: "Bilbo Swash Caps", cursiva
+                font-size: 80px
+                color: $textcolor
+            p
+                font-size: 25px
+                text-align: center
+            a
+                text-decoration: none
+        .galeria-main
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-flow: column nowrap
+            align-self: center
+            .row
+                width: 100%
+                justify-content: center
+                align-items: center
+                height: 250px
+                .image
+                    box-shadow: -5px 5px 5px grey
+                    margin: 10px
+                    padding: 0px
+                    transition: box-shadow 0.3s
+                    img
+                        width: 100%
+                        height: 200px
+                        object-fit: cover
+                .image:hover
+                    box-shadow: -3px 3px 5px $secondarycolor
+#onas
+    user-select: none
+    width: 100%
+    height: 500px
+    display: flex
+    jusfify-content: center
+    align-items: center
+    flex-flow: column nowrap
+    .onas-header
+        width: 100%
+        height: 200px
+        display: flex
+        flex-flow: column nowrap
+        justify-content: center
+        align-items: center
+        z-index: 100
+    a
+        font-family: 'Bilbo Swash Caps', cursive
+        text-decoration: none
+        color: $maincolor
+        text-shadow: 2px 2px black
+        font-size: 90px
+    .onas-wall
+        width: 100%
+    .onas-shadow
+        width: 100%
+        height: 440px
+        background-color: rgba(0, 0, 0, 0.288)
+        z-index: -1
+        position: absolute
+    .onas-containervideo
+        width: 100%
+        margin-top: -200px
+    .onas-video
+        z-index: -100
+        filter: contrast(120%)
+        overflow: hidden !important
+        video
+            margin-top: 40px
+            width: 100%
+            object-fit: cover
+            height: 450px
+            z-index: -100
+
+    .onas-items
+        z-index: 100
+        height: 300px
+        width: 100%
+        position: absolute
+        justify-content: center
+        align-items: center
+        .item
+            padding-top: 15px
+            display: flex
+            justify-content: center
+            align-items: center
+            align-self: center
+            flex-flow: column nowrap
+            width: 75px
+            height: 75px
+            transition: transform 0.3s ease-out
+            i
+                color: $maincolor
+                font-size: 45px
+                padding: 15px
+            span
+                color: $maincolor
+                font-weight: bold
+                font-size: 30px
+
+            p
+                color: $maincolor
+        .item:hover
+            transform: translateY(-15px)
+
+#lokalizacja
+    .lokalizacja-heading
+            margin-top: -33px
+            height: 185px
+            background-color: $maincolor
+            padding: 0
+            display: flex
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: center
+            h2
+                display: flex
+                flex-flow: column nowrap
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 100px
+                z-index: 100
+            a
+                font-family: 'Bilbo Swash Caps', cursive
+                text-decoration: none
+                color: $textcolor
+                font-size: 80px
+    .lokalizacja-shadow
+        position: absolute
+        width: 100%
+        height: 450px
+        background-color: rgba(0,0,0,0.2)
+    .lokalizacja-main
+        height: 450px
+        background-image: url("/css/images/krynica1.jpg")
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        margin-top: -33px
+        padding: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: row wrap
+        iframe
+            z-index: 100
+            box-shadow: 0px 0px 20px 0px $textcolor
+        p
+            width: 40%
+            color: $maincolor
+            z-index: 100
+            padding: 30px
+            margin: 50px
+            background-color: #008bc2e0
+
+
+#kontakt
+    margin-bottom: -2rem
+    .kontakt-heading
+            margin-top: -33px
+            height: 185px
+            background-color: $maincolor
+            padding: 0
+            display: flex
+            flex-flow: column nowrap
+            justify-content: center
+            align-items: center
+            h2
+                display: flex
+                flex-flow: column nowrap
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: 100px
+                z-index: 100
+            a
+                font-family: 'Bilbo Swash Caps', cursive
+                text-decoration: none
+                color: $textcolor
+                font-size: 80px
+            p
+                margin-top: -10px
+                color: black
+                font-size: 20px
+                text-align: center
+    .kontakt-shadow
+        position: absolute
+        width: 100%
+        height: 600px
+        background-color: rgba(0,0,0,0.2)
+    .kontakt-main
+        background-image: url("/css/images/krynica2.jpg")
+        background-size: cover
+        background-position: center
+        background-attachment: fixed     
+        height: 600px
+        margin-top: -33px
+        padding: 0
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-flow: row-reverse wrap
+        .infocon
+            width: 40%
+            z-index: 100
+            padding: 30px
+            margin: 50px
+            background-color: $secondarycolorAlpha
+            text-align: center
+            box-shadow: 0px 0px 20px 0px $textcolor
+            h3
+                font-family: 'Montserrat', sans-serif
+                font-size: 40px
+                color: black
+            p
+                font-family: 'Montserrat', sans-serif
+                font-size: 20px
+                color: #ffffff
+                font-weight: bold
+                text-shadow: 1px 1px black
+        .contact
+            box-shadow: 0px 0px 20px 0px $textcolor
+
+footer
+    box-shadow: 0px 0px 10px 1px black
+    width: 100%
+    height: 50px
+    background-color: black
+    text-align: center
+    color: #ffffff
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-flow: column nowrap
+    p
+        margin-top: 15px
+        a
+            align-self: center
+            color: rgb(255, 136, 0)
