@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" user-scalable="no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- fonts -->
+    
+
+<!-- links/style -->
+    <link rel="stylesheet" href=".\css\style.css" type="text/css">
+    <link rel="stylesheet" href=".\css\animate.css" type="text/css"/> 
+    <link href=".\css\lightbox.css" rel="stylesheet" /> 
+    <link rel="stylesheet" href=".\css\form.css" type="text/css">  
+<!-- links/mediaqueries -->
+    <link media="screen and (min-width: 576px)"  rel="stylesheet" href=".\css\small.css" type="text/css">
+    <link media="screen and (min-width: 768px)"  rel="stylesheet" href=".\css\medium.css" type="text/css">
+    <link media="screen and (min-width: 992px)"  rel="stylesheet" href=".\css\large.css" type="text/css">
+    <link media="screen and (min-width: 1200px)"  rel="stylesheetkontakt" href=".\css\extra.css" type="text/css">
+    <title>Witamy w pensjonacie Relax!</title>
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+
+    <link rel="icon" type="image/ico" href="./css/images/logo.png" />
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg bg-light fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-home"></i> Strona główna</a>
+            </li>
+            <li class="nav-item">
+                    <a class="nav-link" href="#oferta"><i class="fas fa-bed"></i> Oferta</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#galeria"><i class="fas fa-image"></i> Galeria</a>
+            </li>
+            <li id="nav-brand-id" class="nav-brand os-animation" data-animation="flipInX">
+                <a class="nav-link"href=""><img src="css/images/logo.png"></img></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#onas"><i class="fas fa-pencil-alt"></i> O nas</a>
+            </li> 
+            <li class="nav-item">
+                <a class="nav-link" href="#lokalizacja"><i class="fas fa-map-marked-alt"></i> Lokalizacja</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#kontakt"><i class="fas fa-paper-plane"></i> Kontakt</a>
+            </li>
+            </ul>
+    </div>
+  </nav>
+<!-- home -->
+<header id="home">
+        <div class="home-wall">
+                <div class="home-socialmedia">
+                        <a href="https://www.facebook.com/pg/bogdankrynica/"><i class="fab fa-facebook-f"></i></a>
+                </div>
+
+           
+            <div id="scene" class="home-container-header os-animation hidden"  data-animation="fadeInLeft" data-delay="0.7s" >
+                <div data-depth="0.65">
+                <h1>Spędź wakacje blisko morza</h1>
+                </div>
+            </div>
+            <div id="scene" class="home-container-para"><a href="#pre-oferta">
+                <p class="os-animation hidden" data-animation="fadeInRight" data-delay="1.4s" >Zapraszamy do Naszego pensjonatu w  <b> Krynicy Morskiej!</b></p></a>
+            </div>
+            
+            </div>
+            
+        </div>
+                
+        <div class="home-img">
+            <div class="home-shadow"></div>
+            <div class="carousel-container">
+            <div id="home-img-slider" class="carousel slide carousel-fade" data-ride="carousel" data-interval="6000">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="./css/images/pic1.jpg" class="d-block w-100 " alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./css/images/pic2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./css/images/pic3.jpg" class="d-block w-100 " alt="...">
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+</header>
+
+<!-- oferta -->
+<section class="oferta scroll-fix">
+    <div class="oferta-wall">
+      <div class="oferta-shadow"></div>
+      <div class="oferta-head">
+          <a href="#oferta"><h2 id="pre-oferta" class="oferta-header scroll-fix">Witamy!</h2></a>
+          <div class="oferta-head-container">
+          <div class="oferta-head-hero">
+              <img class="oferta-hero-photos os-animation hidden" data-animation="fadeIn" src="./css/images/phs.png"/>
+          </div>
+          <p class="oferta-paragraph-left">Pensjonat Relax to kompleks ekskluzywnych domków położony w malowniczej wsi Wicie w województwie zachodniopomorskim, bezpośrednio nad morzem oraz w bliskim sąsiedztwie jeziora Kopań. Obiekt składa się z pięciu wolnostojących, domków o metrażu 60m2 każdy, wybudowanych w stylu góralskim przez samych górali. Domki zostały wykonane z największą dbałością o każdy detal zarówno z zewnątrz jak i wewnątrz co daje poczuć uroki góralskiej chaty.</p>
+        </div>
+        <p class="oferta-paragraph-center">        
+        </p>
+      </div>
+      <div id="oferta" class="oferta-heading">
+        <a href="#oferta">
+        Nasza oferta
+        </a>
+      </div>
+
+      <div class="jumbotron jumbotron-fluid bg-transparent">
+        <div class="container">
+
+          <h1 class="h1-left display-4">Komfortowe pokoje</h1>
+          <div class="background">
+         <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel" data-interval="3000">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a  href="./css/images/pokoj1.jpg" data-lightbox="rooms" data-title="Domek pierwszy">
+                    <img src="./css/images/pokoj1.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Przestronny pokój 2 osobowy z dużym tarasem</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a  href="./css/images/pokoj2.jpg" data-lightbox="rooms" data-title="Domek pierwszy">
+                    <img src="./css/images/pokoj2.jpg" class="d-block w-100" alt="...">
+                  </a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Pokój 3 osobowy z łazienką i aneksem kuchennym</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <a href="./css/images/pokoj1.jpg" data-lightbox="rooms" data-title="Domek pierwszy">
+                    <img src="./css/images/pokoj1.jpg" class="d-block w-100" alt="...">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                      <p>Recepcja oraz hall wewnątrz budynku</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+              <p class="para pararight"> Każdy domek został wyposażony w aneks kuchenny w zabudowie dębowej w której znajdziecie Państwo niezbędne wyposażenie kuchenne, wypoczynek skórzany z funkcją spania, ławę jadalnianą oraz dwie sypialnie wyposażone w jedno łoże sypialniane podwójne i dwa łóżka pojedyncze. Każdy z domków może jednorazowo pomieścić 4-6 osób. Przed każdym z domków znajduję się taras z ławą i wyposażeniem grillowym. Nasz ośrodek to najlepszy wybór dla rodzin z dziećmi oraz par które pragną spędzić urokliwe wakacje nad morzem w miłej atmosferze jaką gwarantuje wybór naszego ośrodka.
+              </div>
+              
+              
+          <!-- <a class="picture" href="./css/images/pokoj1.jpg" data-lightbox="example-1" data-title="Domek pierwszy"><img class="picture pic-shadow" src="./css/images/pokoj1.jpg" alt="image-1" /></a> -->
+        </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid bg-transparent">
+          <div class="container">
+
+            <h1 class="h1-right display-4">Atrakcyjna okolica</h1>
+            <div class="background">
+           <div id="carouselCaptions" class="carousel slide carousel-fade" data-ride="carousel" data-interval="4000">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselCaptions" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <a  href="./css/images/zxc.jpg" data-lightbox="restaurants" data-title="Domek pierwszy">
+                      <img src="./css/images/zxc.jpg" class="d-block w-100" alt="...">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>Wypożyczalnia sprzętu</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a  href="./css/images/bar.jpg" data-lightbox="restaurants" data-title="Domek pierwszy">
+                      <img src="./css/images/bar.jpg" class="d-block w-100" alt="..."></a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>Pub na plaży</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <a  href="./css/images/restaurant.jpg" data-lightbox="restaurants" data-title="Domek pierwszy">
+                      <img src="./css/images/restaurant.jpg" class="d-block w-100" alt="...">
+                      </a>
+                      <div class="carousel-caption d-none d-md-block">
+                        <p>Bliska restauracja</p>
+                      </div>
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <p class="para paraleft">
+                  Każdy domek został wyposażony w aneks kuchenny w zabudowie dębowej w której znajdziecie Państwo niezbędne wyposażenie kuchenne, wypoczynek skórzany z funkcją spania, ławę jadalnianą oraz dwie sypialnie
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas quibusdam itaque dolore porro eius! ośrodek to najlepszy wybór dla rodzin z dziećmi oraz par które pragną spędzić urokliwe wakacje nad morzem w miłej atmosferze jaką gwarantuje wybór naszego ośrodka.
+                  </p>      
+
+                </div>
+                
+                
+            <!-- <a class="picture" href="./css/images/pokoj1.jpg" data-lightbox="example-1" data-title="Domek pierwszy"><img class="picture pic-shadow" src="./css/images/pokoj1.jpg" alt="image-1" /></a> -->
+          </div>
+          </div>
+
+          <div class="jumbotron jumbotron-fluid bg-transparent">
+              <div class="container">
+    
+                <h1 class="h1-center display-4">..blisko plaży i morza!</h1>
+                <div class="background bigger">
+               <div id="carouselCaptions2" class="carousel slide" data-ride="carousel" data-interval="4000">
+                      <ol class="carousel-indicators">
+                        <li data-target="#carouselCaptions2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselCaptions2" data-slide-to="1"></li>
+                        <li data-target="#carouselCaptions2" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                        
+                        <div class="carousel-item active">
+                          <a  href="./css/images/asd.jpg" data-lightbox="beach" data-title="Domek pierwszy">
+                          <img src="./css/images/asd.jpg" class="d-block w-100" alt="...">
+                          </a>
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Przepiękna okolica</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <a  href="./css/images/asdas.jpg" data-lightbox="beach" data-title="Domek pierwszy">
+                          <img src="./css/images/asdas.jpg" class="d-block w-100" alt="...">
+                          </a>
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Świetne widoki na morze</p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <a  href="./css/images/beach.jpg" data-lightbox="beach" data-title="Domek pierwszy">
+                          <img src="./css/images/beach.jpg" class="d-block w-100" alt="...">
+                          </a>
+                          <div class="carousel-caption d-none d-md-block">
+                            <p>Czysta, piaszczysta plaża</p>
+                          </div>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#carouselCaptions2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#carouselCaptions2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                    <p class="para paraleft">
+                      Każdy domek został wyposażony w aneks kuchenny w zabnorazowo pomieścić 4-6 osób. Przed każdym z domków znajduję się taras z ławą i wyposażeniem grillowym. Nasz ośrodek to najlepszy wybór dla rodzin z dziećmi oraz par które
+                      <br><br>
+
+                      Domków znajduję się taras z ławą i wyposażeniem grillopszy wybór dla rodzin z dziećmi oraz par które pragną spędzić urokliwe wakacje nad morzem w miłej atmosferze jaką gwarantuje wybór naszego ośrodka.
+                      <br><br>
+                       
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas itaque, nulla aspernatur nostrum ut corrupti impedit eos, ad dolorem totam veritatis accusamus, quibusdam cideo
+                      </p>      
+    
+                    </div>
+                    
+                    
+                <!-- <a class="picture" href="./css/images/pokoj1.jpg" data-lightbox="example-1" data-title="Domek pierwszy"><img class="picture pic-shadow" src="./css/images/pokoj1.jpg" alt="image-1" /></a> -->
+              </div>
+              </div>
+    
+</div> 
+</section>
+<!-- galeria -->
+<section id="galeria" class="scroll-fix">
+      <div class="galeria-jumbotron jumbotron">
+      <div class="galeria-header">
+          <a href="#galeria">
+        <h1 class="display-4">Galeria</h1>
+        </a>
+        <p class="lead">Zapraszamy do obejrzenia zdjęć!</p>
+      </div>
+      <div class="galeria-main">
+        <!-- first row -->
+          <div class="row">
+              <div class="image col-2">
+              <a  href="./css/images/beach.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/beach.jpg" class="d-block w-100" alt="...">
+              </a>
+              </div>
+              <div class="image col-4">
+              <a  href="./css/images/bar.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/bar.jpg" class="d-block w-100" alt="...">
+              </a>
+              </div>
+              <div class="image col-2">
+              <a  href="./css/images/asd.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/asd.jpg" class="d-block w-100" alt="...">
+              </a>
+              </div>
+              <div class="image col-2">
+              <a  href="./css/images/pic1.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pic1.jpg" class="d-block w-100" alt="...">
+              </a>
+              </div>
+            </div>
+            <!-- second row -->
+            <div class="row">
+              <div class="image col-2">
+              <a  href="./css/images/pokoj1.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pokoj1.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+              <div class="image col-2">
+              <a  href="./css/images/pic2.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pic2.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+              <div class="image col-5">
+              <a  href="./css/images/pic3.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pic3.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+              <div class="image col-2">
+              <a  href="./css/images/oferta-wall.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/oferta-wall.jpg" class="d-block w-100" alt="...">
+              </a>
+              </div>
+            </div>
+            <!-- third row -->
+              <div class="row">
+              <div class="image col-6">
+              <a  href="./css/images/pokoj1.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pokoj1.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+              <div class="image col-3">
+              <a  href="./css/images/restaurant.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/restaurant.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>
+              <div class="image col-2">
+              <a  href="./css/images/pokoj1.jpg" data-lightbox="gallery" data-title="Domek pierwszy">
+              <img src="./css/images/pokoj1.jpg" class="d-block w-100" alt="...">
+            </a>
+            </div>    
+
+              </div>
+      </div> 
+  </div>
+</section>
+<!-- o nas -->
+<section id="onas" class="scroll-fix">
+    <div class="onas-shadow"></div>
+
+        <div class="onas-header">
+                <h2><a href="#onas">O nas</a></h2>
+        </div>
+        <div class="onas-wall">
+        <div class="onas-items row">
+                <div class="item col-2">
+                    <i style="transform: rotate(-90deg);" class="fas fa-shoe-prints"></i>
+                    <span>156</span><p> metrów od morza</p>
+                </div>
+                <div class="item col-2">
+                        <i class="far fa-thumbs-up"></i>
+                        <span>ponad 100</span><p> klientów i polubień</p>
+                </div>
+                <div class="item col-2">
+                        <i class="fas fa-door-open"></i>
+                        <span>13</span><p> pokoi do wynajęcia</p>
+                </div>
+                <div class="item col-2">
+                        <i class="fas fa-coins"></i>
+                        <span>Niskie ceny</span><p> za noclegi</p>
+                
+                </div>
+                <div class="item col-2">
+                        <i class="fas fa-calendar-day"></i>
+                        <span>Otwarte</span><p> przez cały rok!</p>
+                </div>
+    
+            </div>
+            <div class="onas-containervideo">
+            <div class="onas-video">
+        <video width="100%" playsinline autoplay loop>
+                <source src="./css/images/movie.mp4" type="video/mp4">
+        </video> 
+            </div>
+            </div>
+        </div>
+    </section> 
+<!-- lokalizacja -->
+<section id="lokalizacja" class="scroll-fix">
+    <div class="lokalizacja-heading jumbotron">
+              <h2><a href="#lokalizacja">Lokalizacja</a></h2>
+    </div>
+    <div class="lokalizacja-main jumbotron">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4646.976265471581!2d19.433282765641184!3d54.38369259652196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd311f6f748001%3A0x62e081f84615dfcf!2sO%C5%9Brodek%20Wczasowy%20%22Relax%22!5e0!3m2!1spl!2spl!4v1584365033284!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <p><b>Krynica Morska</b> jest jednym z najmniejszych, pod względem liczby ludności, miast w Polsce. Usytuowana na północy Polski, na małym skrawku lądu - Mierzei Wiślanej, otoczona od północy wodami Morza Bałtyckiego, a od południa Zalewu Wiślanego porośnięta Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, ullam at! Quibusdam minima voluptatem dolor totam fugiat harum aliquid, asperiores officiis tempore molestias fugit ipsum cum atque eius! Repellendus, accusantium! </p>
+    <div class="lokalizacja-shadow"></div>
+
+</div>
+</section>
+<!-- contact -->
+<section id="kontakt" class="scroll-fix">
+    <div class="kontakt-heading jumbotron jumbotron-fluid">
+              <h2><a href="#kontakt">Kontakt</a></h2>
+              <p class="lead">Skontaktuj się z nami w celu rezerwacji</p>
+    </div>
+    <div class="kontakt-main jumbotron jumbotron-fluid">
+        <div id="formularz-kontaktowy" class="contact" role="dialog" aria-label="Formularz kontaktowy" aria-hidden="true">
+            <form class="emailForm" method="POST" action="https://formspree.io/kobzuu@gmail.com">
+                <label class="half" aria-live="polite">
+                    Twój email
+                    <input class="form-data" name="email" type="email" placeholder="" required>
+                </label>
+                <label class="half" aria-live="polite">
+                    Temat
+                    <input class="form-data" name="_subject" placeholder="" minlength="4" maxlength="78"
+                           required>
+                </label>
+                <label aria-live="polite">
+                    Wiadomość
+                    <textarea class="form-data" name="message" placeholder="Wpisz tu treść wiadomości" minlength="4"
+                              maxlength="6000" required></textarea>
+                </label>        
+                <div class="buttoncaptcha"> 
+                <label class="recaptcha-label" aria-live="polite">
+                    <div class="g-recaptcha" tabindex="-1" data-sitekey="6LfYr-EUAAAAAP2y1gCjLyd--GQ_VOkqUZsMqooJ"
+                         data-callback="recaptchaClearErr"></div>
+                </label>
+                <button class="emailFormSubmit main-btn" name="submit" type="submit">Wyślij do nas</button>
+              </div>
+            </form>
+        </div>
+        
+    <div class="infocon">
+    <h3>Telefon:</h3>
+    <p>+48 485 564 33<br>
+    600 300 400</p>
+    <h3>Adres:</h3>
+    <p>ul. Żeromskiego 3<br>
+    01-330 Krynica Morska</p>
+    <h3>E-mail:</h3>
+    <p>pensjonatrelax@gmail.com</p>
+    </div>
+    <div class="kontakt-shadow"></div>
+
+</div>
+</section>
+
+</body>
+<!-- footer -->
+<footer>
+<p>&copy; 2020 <a href="">Pensjonat Relax</a></p>
+</footer>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script src="https://kit.fontawesome.com/eebbdab8a5.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" 
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js\emailform.js"></script>
+<script src="js\lightbox-plus-jquery.min.js"></script>
+<script src="js\jquery.waypoints.min"></script>
+<script src="js\animation.js"></script>
+<script src="js\main.js"></script>
+
+</html>

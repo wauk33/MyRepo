@@ -1,0 +1,210 @@
+.contact {
+  padding: 0px 30px 0px 30px;
+  display: block;
+  width: 100%;
+  background-color: #474747;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: calc(16px + (25 - 20) * ((100vw - 320px)/ (1920 - 320)));
+  z-index: 999;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    width: 45%;
+  }
+}
+
+.emailForm label {
+
+  display: block;
+  font-family: "Montserrat";
+  margin: 30px 0 30px;
+  color: rgb(245, 245, 245);
+}
+
+.emailForm label.half {
+   display: inline-block;
+   width: 49.4%;
+ }
+
+@media (max-width: 1200px) {
+  .emailForm label.half {
+    display: block;
+    width: 100%;
+  }
+}
+
+.emailForm textarea {
+  display: block;
+  padding: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  width: 100%;
+  margin: 0;
+  height: 20vh;
+  resize: none;
+  color: #555;
+  font-size: inherit;
+}
+
+@media (min-width: 768px) {
+  .emailForm textarea {
+    height: 25vh;
+  }
+}
+
+@media (max-height: 670px) {
+  .emailForm textarea {
+    height: 15vh;
+  }
+}
+
+.emailForm input {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: inherit;
+}
+
+.emailForm .error {
+  background: rgb(255, 107, 98);
+  position: absolute;
+  display: block;
+  animation: .5s slideTop;
+  z-index: -1;
+  border-top: 0 !important;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  max-width: 80%;
+  padding: 0 5px;
+  color: white;
+  font-size: 0.8em;
+}
+
+@media (max-width: 500px) {
+  .emailForm input[type="text"],
+  .emailForm input[type="email"] {
+    display: block;
+  }
+}
+
+.buttoncaptcha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}
+.emailForm button[type=submit] {
+  width: 40%;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 1.1em;
+  transition: all 0.3s;
+  background-color: rgba(255, 136, 0, 0.815)
+}
+
+.g-recaptcha {
+  margin-top: -10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.recaptcha-label {
+  width: 306px;
+  margin: auto !important;
+  max-width: none;
+}
+
+@media (max-width: 375px) {
+  .recaptcha-label{
+    margin-left: calc((100% - 306px)/2)!important;
+    transform:scale(0.9);
+    -webkit-transform:scale(0.9);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+  }
+}
+
+.emailFormAlert {
+  color: #ec3945;
+  padding: 6px 0px;
+  height: 50px;
+  overflow: auto;
+}
+
+.emailFormAlert .fa {
+  color: #555;
+}
+
+.wrongInput {
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.contact .close-btn:hover {
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-height: 465px) {
+  .contact {
+    height: 85vh;
+    margin-top: 40px;
+    overflow: auto;
+  }
+
+  .emailForm textarea {
+    height: 20vh;
+  }
+}
+
+.main-btn {
+  background: #262626;
+  border-radius: 5px;
+  color: #ffffff;
+  display: inline-block;
+  margin: 10px auto 10px auto;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  padding: 3px 10px;
+  box-shadow: 0 1px 4px 0 black;
+}
+
+.main-btn i {
+  color: white;
+}
+
+.main-btn:hover,
+.main-btn:focus{
+  text-decoration: none;
+  transform: translateY(-1px);
+  color: #ffffff;
+  background: rgb(50, 50, 50);
+  box-shadow: 0 2px 8px 0 black;
+}
+
+.main-btn:active {
+  transform: translateY(+1px);
+  box-shadow: 0 1px 4px 0 black;
+}
