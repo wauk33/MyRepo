@@ -859,7 +859,7 @@ header .home-container-para:hover {
 
 #lokalizacja .lokalizacja-main {
   height: 450px;
-  background-image: url("/css/images/krynica1.jpg");
+  background-image: url("./css/images/krynica1.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -960,7 +960,7 @@ header .home-container-para:hover {
 }
 
 #kontakt .kontakt-main {
-  background-image: url("/css/images/krynica2.jpg");
+  background-image: url("./css/images/krynica2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
