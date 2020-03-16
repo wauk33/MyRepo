@@ -141,6 +141,7 @@ header .home-wall {
 }
 
 header .home-socialmedia {
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
