@@ -409,7 +409,6 @@ header .home-container-para:hover {
   background-color: rgba(0, 0, 0, 0.288);
   z-index: 0;
   position: absolute;
-  margin-top: -55px;
 }
 
 .oferta .oferta-heading {
