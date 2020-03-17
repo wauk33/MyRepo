@@ -39,34 +39,10 @@ $(function () {
         }
 
         grecaptcha.reset();
-        openContactBtn.focus();
       }
     }
-
-    const closeContactBtn = $('#close-contact-btn');
-    const openContactBtn = $('#open-contact-btn');
-
-    openContactBtn.click(() => {
-      toggleContactForm(true);
-    });
-
-    closeContactBtn.click(() => {
-      toggleContactForm(false);
-    });
 
     const firstInput = $('.form-data:first');
-
-    if (document.location.hash === '#formularz-kontaktowy') {
-      openContactBtn.focus();
-      openContactBtn.click();
-    }
-
-    closeContactBtn.on('keydown', (e) => {
-      if ((e.which === 9 && !e.shiftKey)) { // tab
-        e.preventDefault();
-        firstInput.focus();
-      }
-    });
 
     firstInput.on('keydown', (e) => {
       if ((e.which === 9 && e.shiftKey)) { // tab
