@@ -299,7 +299,7 @@ header .home-container-para:hover {
 
 .oferta .oferta-wall .oferta-head a .oferta-header {
   width: 100vw;
-  height: 170px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -336,7 +336,7 @@ header .home-container-para:hover {
 .oferta .oferta-wall .oferta-head .oferta-head-hero {
   width: 100%;
   height: auto;
-  margin-top: -4rem;
+  margin-top: -5rem;
 }
 
 .oferta .oferta-wall .oferta-head .oferta-head-hero img {
@@ -720,9 +720,9 @@ header .home-container-para:hover {
 
 #onas .onas-shadow {
   width: 100%;
-  height: 440px;
+  height: 445px;
   background-color: rgba(0, 0, 0, 0.288);
-  z-index: -1;
+  z-index: 1;
   position: absolute;
 }
 
@@ -736,6 +736,9 @@ header .home-container-para:hover {
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
   overflow: hidden !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #onas .onas-video video {
