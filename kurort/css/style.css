@@ -27,11 +27,53 @@ body {
 }
 
 #navbar {
+  background-color: #f9f9f9;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   height: 55px;
+}
+
+#navbar .navbar-small {
+  width: 100vw;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 10;
+      -ms-flex: 10;
+          flex: 10;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+#navbar .navbar-small .navbar-logo {
+  -webkit-box-flex: 8;
+      -ms-flex: 8;
+          flex: 8;
+}
+
+#navbar .navbar-small .navbar-toggler-icon {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#navbar .navbar-small .navbar-toggler-icon i {
+  font-size: 25px;
 }
 
 #navbar .navbar-nav {
@@ -83,6 +125,10 @@ body {
 
 #navbar .navbar-nav .nav-brand-hide {
   display: none !important;
+}
+
+#navbar .nav-transparent {
+  background-color: #f9f9f9bc !important;
 }
 
 header {
@@ -140,8 +186,7 @@ header .home-wall {
   height: 100vh;
 }
 
-header .home-socialmedia {
-  z-index: 999;
+header .home-socialmediabox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -152,33 +197,40 @@ header .home-socialmedia {
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-item-align: end;
-      align-self: flex-end;
+      align-self: end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background-color: #2327fa96;
-  font-size: 32px;
+  width: 57px;
+  height: 57px;
+  background-color: #2327fada;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  margin-top: -25rem;
-  -webkit-transition: width 0.2s;
-  transition: width 0.2s;
+  position: fixed;
+  z-index: 999;
 }
 
-header .home-socialmedia i {
+header .home-socialmediabox .home-socialmedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 32px;
+}
+
+header .home-socialmediabox .home-socialmedia i {
   color: #f9f9f9;
 }
 
-header .home-socialmedia:hover {
-  width: 70px;
+header .home-socialmediabox .home-socialmedia:hover {
   background-color: #2024ffb4;
+  text-shadow: 1px 1px 5px #cecece98;
 }
 
 header .home-container-header {
@@ -280,7 +332,7 @@ header .home-container-para:hover {
   width: 100%;
   height: 430px;
   background-color: #ffffffb9;
-  z-index: 100;
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +443,7 @@ header .home-container-para:hover {
   padding: 0px 100px 0px 0px;
   width: 100%;
   color: #292929;
-  font-size: 18px;
+  font-size: 19px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -407,13 +459,13 @@ header .home-container-para:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.288);
-  z-index: 0;
+  z-index: 5;
   position: absolute;
 }
 
 .oferta .oferta-heading {
   width: 100%;
-  height: 250px;
+  height: 200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -590,6 +642,11 @@ header .home-container-para:hover {
           align-items: center;
   z-index: 1000;
   margin-bottom: -2rem;
+  background-color: #f9f9f9;
+}
+
+#galeria .galeria-jumbotron .gallery-carousel {
+  display: none;
 }
 
 #galeria .galeria-jumbotron .galeria-header {
@@ -644,8 +701,8 @@ header .home-container-para:hover {
 }
 
 #galeria .galeria-jumbotron .galeria-main .row .image {
-  -webkit-box-shadow: -5px 5px 5px grey;
-          box-shadow: -5px 5px 5px grey;
+  -webkit-box-shadow: -3px 3px 10px grey;
+          box-shadow: -3px 3px 10px grey;
   margin: 10px;
   padding: 0px;
   -webkit-transition: -webkit-box-shadow 0.3s;
@@ -854,6 +911,8 @@ header .home-container-para:hover {
 }
 
 #lokalizacja .lokalizacja-shadow {
+  padding: 0;
+  margin: 0;
   position: absolute;
   width: 100%;
   height: 450px;
@@ -1021,7 +1080,7 @@ footer {
   -webkit-box-shadow: 0px 0px 10px 1px black;
           box-shadow: 0px 0px 10px 1px black;
   width: 100%;
-  height: 50px;
+  height: 30px;
   background-color: black;
   text-align: center;
   color: #ffffff;
@@ -1041,6 +1100,7 @@ footer {
 }
 
 footer p {
+  font-size: 13px;
   margin-top: 15px;
 }
 
