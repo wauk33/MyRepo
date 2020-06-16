@@ -1,5 +1,4 @@
 // min-width: 320px
-
 #navbar
     height: 80px
     padding: 0
@@ -40,14 +39,15 @@ header
     
     .carousel-item
         img
+            height: 100%
             width: 100%
             position: relative
-            top: 30%
+            top: 0
             left: 0 !important
             transform: none 
-            transform: scale(3)
+            object-fit: cover
     .home-socialmediabox
-        margin-top: -300px
+        margin-top: -100px
         width: 45px
         height: 45px
         position: ABSOLUTE
@@ -58,9 +58,13 @@ header
     
     .home-container-header
         margin-top: 400px
+        @media screen and (max-height:600px)
+            margin-top: 300px
+        @media screen and (min-height:750px)
+            margin-top: 600px
         h1
             width: 90%
-            height: 80px
+            height: 100%
             font-size: 26px
             margin-left: 2rem
             padding: 10px
@@ -165,7 +169,6 @@ header
         justify-content: center
         align-items: center
         height: 250px
-        box-shadow: 0px 0px 15px #00000093
         border-radius: 10px
         .carousel-shadow
             width: 100%
@@ -244,3 +247,24 @@ header
                 padding-top: 1rem
         p
             font-size: 17px
+    .kontakt-main
+        height: 100%
+        flex-flow: column-reverse
+        .infocon
+            width: 90%
+            padding: 25px 10px 25px 10px
+            margin: 30px
+            h3 
+                font-size: 30px
+                user-select: none
+            p 
+                font-size: 18px
+        .contact
+            width: 90%
+            .buttoncaptcha
+                .recaptcha-label
+                    .g-recaptcha
+                        div
+                            div
+                                iframe
+                                    max-width: 200px

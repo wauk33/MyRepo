@@ -27,6 +27,7 @@ body {
 }
 
 #navbar {
+  width: 100vw;
   background-color: #f9f9f9;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -187,6 +188,7 @@ header .home-wall {
 }
 
 header .home-socialmediabox {
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

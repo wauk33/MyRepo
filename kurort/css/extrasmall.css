@@ -64,18 +64,19 @@
 }
 
 header .carousel-item img {
+  height: 100%;
   width: 100%;
   position: relative;
-  top: 30%;
+  top: 0;
   left: 0 !important;
   -webkit-transform: none;
           transform: none;
-  -webkit-transform: scale(3);
-          transform: scale(3);
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .home-socialmediabox {
-  margin-top: -300px;
+  margin-top: -100px;
   width: 45px;
   height: 45px;
   position: ABSOLUTE;
@@ -89,9 +90,21 @@ header .home-container-header {
   margin-top: 400px;
 }
 
+@media screen and (max-height: 600px) {
+  header .home-container-header {
+    margin-top: 300px;
+  }
+}
+
+@media screen and (min-height: 750px) {
+  header .home-container-header {
+    margin-top: 600px;
+  }
+}
+
 header .home-container-header h1 {
   width: 90%;
-  height: 80px;
+  height: 100%;
   font-size: 26px;
   margin-left: 2rem;
   padding: 10px;
@@ -236,8 +249,6 @@ header .home-container-para p b {
       -ms-flex-align: center;
           align-items: center;
   height: 250px;
-  -webkit-box-shadow: 0px 0px 15px #00000093;
-          box-shadow: 0px 0px 15px #00000093;
   border-radius: 10px;
 }
 
@@ -355,5 +366,39 @@ header .home-container-para p b {
 
 #kontakt .jumbotron p {
   font-size: 17px;
+}
+
+#kontakt .kontakt-main {
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: column-reverse;
+          flex-flow: column-reverse;
+}
+
+#kontakt .kontakt-main .infocon {
+  width: 90%;
+  padding: 25px 10px 25px 10px;
+  margin: 30px;
+}
+
+#kontakt .kontakt-main .infocon h3 {
+  font-size: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#kontakt .kontakt-main .infocon p {
+  font-size: 18px;
+}
+
+#kontakt .kontakt-main .contact {
+  width: 90%;
+}
+
+#kontakt .kontakt-main .contact .buttoncaptcha .recaptcha-label .g-recaptcha div div iframe {
+  max-width: 200px;
 }
 /*# sourceMappingURL=extrasmall.css.map */

@@ -16,11 +16,14 @@
     <link href=".\css\lightbox.css" rel="stylesheet" /> 
     <link rel="stylesheet" href=".\css\form.css" type="text/css">  
 <!-- links/mediaqueries -->
-    <link media="screen and (min-width: 320px)"  rel="stylesheet" href=".\css\extrasmall.css" type="text/css">   
-    <link media="screen and (min-width: 576px)"  rel="stylesheet" href=".\css\small.css" type="text/css">
-    <link media="screen and (min-width: 768px)"  rel="stylesheet" href=".\css\medium.css" type="text/css">
-    <link media="screen and (min-width: 992px)"  rel="stylesheet" href=".\css\large.css" type="text/css">
-    <link media="screen and (min-width: 1200px)"  rel="stylesheet" href=".\css\extra.css" type="text/css">
+    <link media="screen and (max-width: 320px)"  rel="stylesheet" href=".\css\extrasmall.css" type="text/css">  
+    <link media="screen and (min-width: 320px) and (max-width: 576px)"  rel="stylesheet" href=".\css\extrasmall.css" type="text/css">   
+    <link media="screen and (min-width: 576px) and (max-width: 768px)"  rel="stylesheet" href=".\css\small.css" type="text/css">
+    <link media="screen and (min-width: 768px) and (max-width: 992px)"  rel="stylesheet" href=".\css\medium.css" type="text/css">
+    <link media="screen and (min-width: 992px) and (max-width: 1200px)"  rel="stylesheet" href=".\css\large.css" type="text/css">
+    <link media="screen and (min-width: 1200px) and (max-width: 1600px)"  rel="stylesheet" href=".\css\extra.css" type="text/css">
+    <link media="screen and (min-width: 1200px) and (max-width: 1600px)"  rel="stylesheet" href=".\css\hd.css" type="text/css">
+
     <title>Witamy w pensjonacie Relax!</title>
     <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=latin-ext" rel="stylesheet">
@@ -75,7 +78,7 @@
               </a>
               </div>
 
-           
+           <div class="scene-container">
             <div id="scene" class="home-container-header os-animation hidden"  data-animation="fadeInLeft" data-delay="0.7s" >
                 <div data-depth="0.65">
                 <h1>Spędź wakacje blisko morza..</h1>
@@ -433,8 +436,8 @@
     </div>
     <div class="lokalizacja-main jumbotron">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4646.976265471581!2d19.433282765641184!3d54.38369259652196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd311f6f748001%3A0x62e081f84615dfcf!2sO%C5%9Brodek%20Wczasowy%20%22Relax%22!5e0!3m2!1spl!2spl!4v1584365033284!5m2!1spl!2spl" width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <p><b> &nbsp;<b style="font-size: 24px;">K</b>rynica Morska </b> leży na północy Polski na <b>Mierzei Wiślanej</b>. Otoczona wodami Morza Bałtyckiego i od południa Zalewem Wiślanym. Jest miastem jednym z <b>najmniejszych pod względem liczby ludności</b> w Polsce.
-      Łączna długość <b>kąpieliska</b> w Krynicy Morskiej ma <b>1950 metrów</b>, na tej przestrzeni plaży znajdują się <b>bary i atrakcje</b>. W mieście ulokowany jest <b>port morski</b>, cztery przystanie dla pływających po wodach statków oraz latarnia morska. <br>Całość terenu lądowego Krynicy Morskiej należy do <b>Parku Krajobrazowego "Mierzeja Wiślana"</b>.</p>
+    <p><b> &nbsp;<b style="font-size: 24px;">K</b>rynica Morska </b> leży na północy Polski na <b>Mierzei Wiślanej</b>, otoczona od północy wodami Morza Bałtyckiego i od południa Zalewem Wiślanym. Jest miastem jednym z <b>najmniejszych pod względem liczby ludności</b> w Polsce.
+      Łączna długość <b>kąpieliska</b> w Krynicy Morskiej ma <b>1950 metrów</b>, na tej przestrzeni plaży znajdują się <b>bary i atrakcje</b>. W mieście ulokowany jest <b>port morski</b>, cztery przystanie dla pływających po wodach statków oraz latarnia morska. Całość terenu lądowego Krynicy Morskiej należy do <b>Parku Krajobrazowego "Mierzeja Wiślana"</b>.</p>
     <div class="lokalizacja-shadow"></div>
 
 </div>
@@ -450,16 +453,16 @@
             <form class="emailForm" method="POST" action="https://formspree.io/kobzuu@gmail.com">
                 <label class="half" aria-live="polite">
                     Twój email
-                    <input class="form-data" name="email" type="email" placeholder="Podaj e-mail" required>
+                    <input class="form-data" name="email" type="email" placeholder="" required>
                 </label>
                 <label class="half" aria-live="polite">
                     Temat
-                    <input class="form-data" name="_subject" placeholder="Wpisz temat" minlength="4" maxlength="78"
+                    <input class="form-data" name="_subject" placeholder="" minlength="4" maxlength="78"
                            required>
                 </label>
                 <label aria-live="polite">
                     Wiadomość
-                    <textarea class="form-data" name="message" placeholder="Wpisz tu treść wiadomości" minlength="4"
+                    <textarea class="form-data" name="message" placeholder="Wpisz tu treść pytania" minlength="4"
                               maxlength="6000" required></textarea>
                 </label>        
                 <div class="buttoncaptcha"> 
@@ -480,7 +483,7 @@
     <p>ul. Żeromskiego 7<br>
     82-120 Krynica Morska</p>
     <h3>E-mail:</h3>
-    <p>pensjonatrelax@gmail.com</p>
+    <p>penrelax@gmail.com</p>
     </div>
     <div class="kontakt-shadow"></div>
 
