@@ -5,7 +5,7 @@
 The site was made from a scratch by me with my own design.
 
 ## Preview
-https://wauk33.github.io/LP_SeaResort
+https://wauk33.github.io/MyRepo/kurort
 > Hosted on GitHub Pages
 
 ## Features
