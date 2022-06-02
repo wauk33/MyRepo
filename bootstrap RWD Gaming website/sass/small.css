@@ -1,0 +1,49 @@
+header h1 {
+  font-size: 2.3rem;
+}
+header h2 {
+  font-size: 1.2em;
+}
+
+.hero-text a {
+  font-size: 15px;
+}
+
+#about h2 {
+  margin-top: -2rem;
+}
+
+#about-hero .wrapper {
+  padding: 6rem 0;
+}
+
+#slider #carddeck .card {
+  margin-bottom: 50px;
+}
+
+#team .slick-prev:before, #team .slick-next:before {
+  font-size: 40px;
+}
+#team .slick-prev {
+  margin-left: -10px;
+}
+#team .slick-prev, #team .slick-next {
+  width: 30px;
+  height: 30px;
+}
+#team .team-shadow {
+  margin-top: -4rem;
+}
+
+#contact .contact-shadow {
+  margin-top: -5rem;
+}
+
+#home .socialmediahead i {
+  display: inline-block;
+}
+
+#team .slick-dots li button::before {
+  font-size: 15px;
+  margin-top: 0px;
+}/*# sourceMappingURL=small.css.map */

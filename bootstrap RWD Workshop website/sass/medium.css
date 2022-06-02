@@ -1,0 +1,30 @@
+#navbar {
+  margin-top: 0px;
+}
+#navbar .navbar-brand .logo {
+  margin-top: -25px;
+  margin-left: 10px;
+}
+#navbar .navbar-brand .logo p {
+  font-size: 30px;
+  margin-top: -10px;
+}
+#navbar .navbar-brand .logo span {
+  margin-top: 15px;
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+
+#home h1 {
+  margin-bottom: 2rem;
+}
+#home .textcon {
+  width: 90%;
+}
+#home .way {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=medium.css.map */

@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/medium.sass"
-    ],
-    "names": [],
-    "file": "medium.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"medium.css"}

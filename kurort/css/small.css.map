@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/small.sass"
-    ],
-    "names": [],
-    "file": "small.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"small.css"}

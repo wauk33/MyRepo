@@ -1,0 +1,270 @@
+// min-width: 320px
+#navbar
+    height: 80px
+    padding: 0
+    .navbar-toggler
+        padding: 0
+        outline: none
+    .navbar-small
+        margin-top: 10px
+        flex-flow: row nowrap
+        display: flex
+        justify-content: center
+        align-items: center
+        .navbar-logo
+            img
+                margin-left: 60px
+                width: 135px
+                height: 135px
+    .navbar-nav
+        margin-top: 15px
+        background-color: #f9f9f9
+        .nav-brand
+            display: none
+        a
+            color:  rgb(41, 41, 41)
+            i
+                display: none
+        a:hover
+            color:  rgb(41, 41, 41)
+        .nav-item
+            width: 100%
+            text-align: center
+            transition: background-color 0.7s
+        .nav-item:hover
+            background-color: #0000005d
+
+header
+    .home-wall
+    
+    .carousel-item
+        img
+            height: 100%
+            width: 100%
+            position: relative
+            top: 0
+            left: 0 !important
+            transform: none 
+            object-fit: cover
+    .home-socialmediabox
+        margin-top: -100px
+        width: 45px
+        height: 45px
+        position: ABSOLUTE
+
+        .home-socialmedia
+            font-size: 28px
+
+    
+    .home-container-header
+        margin-top: 400px
+        @media screen and (max-height:600px)
+            margin-top: 300px
+        @media screen and (min-height:750px)
+            margin-top: 600px
+        h1
+            width: 90%
+            height: 100%
+            font-size: 26px
+            margin-left: 2rem
+            padding: 10px
+    .home-container-para
+        margin-left: 15px
+        margin-top: 20px
+        p
+            width: 95%
+            font-size: 16px
+            margin-bottom: 0
+            b
+                font-size: 16px
+
+.oferta
+    .oferta-wall
+        .oferta-heading
+            font-size: 65px
+            height: 200px
+        .oferta-head
+            a
+                .oferta-header
+                    height: 200px
+            .oferta-head-container
+                .oferta-head-hero
+                    width: 0
+                    img
+                        display: none
+                .oferta-paragraph-left
+                    padding: 15px
+                    font-size: 15px
+                    text-align: center
+    .background
+        flex-flow: column nowrap
+        height: 100%
+        border-top-left-radius: 10px
+        border-bottom-left-radius: 10px
+        .para
+            font-size: 14px
+            width: 100%
+            padding: 15px 20px 10px 20px
+
+    .carousel
+        width: 100%
+        img
+            width: 105%
+            height: 200px
+    .carousel-item
+        width: 101%
+        margin-top: 10px
+        height: 210px
+    .carousel-inner
+        margin-top: -15px
+    .jumbotron
+        .h1-left
+            margin-bottom: 0px
+            margin-left: 0
+            font-size: 24px
+            width: 100%
+            border-top-left-radius: 10px
+            border-top-right-radius: 10px
+            position: relative
+            z-index: 10
+        .h1-right
+            margin-top: -1rem
+            margin-bottom: 0
+            margin-left: 0px
+            font-size: 24px
+            width: 100%
+            border-top-right-radius: 10px
+            border-top-left-radius: 10px
+            position: relative
+            z-index: 10
+        .h1-center
+            margin-top: -1rem
+            margin-bottom: 0
+            margin-left: 0px
+            font-size: 22px
+            width: 100%
+            border-top-right-radius: 10px
+            border-top-left-radius: 10px
+            position: relative
+            z-index: 10
+        .container
+            .bigger
+                align-items: center
+
+#galeria
+    .galeria-jumbotron
+        .galeria-header
+            h1
+                font-size: 60px
+                margin-top: 1rem
+            p
+                font-size: 18px
+                margin-top: -1rem
+                margin-bottom: 2rem
+    .jumbotron
+        border-radius: 0
+    .gallery-carousel
+        display: block !important
+        width: 90vw
+        justify-content: center
+        align-items: center
+        height: 250px
+        border-radius: 10px
+        .carousel-shadow
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 99
+        img
+            border-radius: 5px
+            width: 100%
+            height: 250px
+            transition: filter 0.2s linear
+        img:hover
+            filter: brightness(120%) grayscale(12%)
+
+    .row
+        display: none
+        
+
+#onas
+    .onas-header
+        a
+            font-size: 65px
+    .onas-wall            
+        .onas-items
+        .row
+            margin-left: 0
+            margin-right: 0
+            i
+                font-size: 24px
+            p
+                font-size: 14px
+            span
+                font-size: 18px
+            .item
+                margin-top: -25px
+                i
+                    padding: 5px
+            .col-2
+                flex: 0 0 50%
+                max-width: 50%
+            .hiddenclass
+                display: none
+
+#lokalizacja
+    .jumbotron
+        border-radius: 0
+        height: 130px
+        padding-bottom: 0
+        h2
+            a
+                font-size: 60px
+    .lokalizacja-main
+        flex-flow: column-reverse
+        height: 100%
+        p
+            width: 90%
+            font-size: 15px
+            margin: 50px 0 0 0 
+            padding: 15px
+        iframe
+            margin-top: 2rem
+            width: 90%
+            margin-bottom: 4rem
+
+#kontakt
+    .scroll-fix
+        margin-top: -80px
+        padding-topp: 80px
+    .kontakt-heading
+    .jumbotron
+        padding-bottom: 1rem
+        padding-top: 1rem
+        h2
+            a 
+                font-size: 60px
+                padding-top: 1rem
+        p
+            font-size: 17px
+    .kontakt-main
+        height: 100%
+        flex-flow: column-reverse
+        .infocon
+            width: 90%
+            padding: 25px 10px 25px 10px
+            margin: 30px
+            h3 
+                font-size: 30px
+                user-select: none
+            p 
+                font-size: 18px
+        .contact
+            width: 90%
+            .buttoncaptcha
+                .recaptcha-label
+                    .g-recaptcha
+                        div
+                            div
+                                iframe
+                                    max-width: 200px

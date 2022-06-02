@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../sass/large.sass"
-    ],
-    "names": [],
-    "file": "large.css"
-}
+{"version":3,"sources":[],"names":[],"mappings":"","file":"large.css"}
