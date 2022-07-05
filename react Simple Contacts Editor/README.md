@@ -1,4 +1,4 @@
-# Contacts Editor project
+# Contacts Editor project (NOT FINISHED)
 > Contacts editor with add, delete, select and edit functionalities. Created with React.js and Material UI.
 
 ## General info
